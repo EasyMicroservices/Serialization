@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFrameworks>netstandard2.0;netstandard2.1;net6.0;net45</TargetFrameworks>
+		<Platforms>AnyCPU;x64;x86</Platforms>
+		<Authors>Ali Yousefi Telori, Mahdi Delzende</Authors>
+		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+		<Version>0.0.0.1</Version>
+		<Description>Serilize and deserilize wrapper</Description>
+		<Copyright>EasyMicroservice@gmail.com</Copyright>
+		<PackageTags>Serilize,deserilize</PackageTags>
+		<PackageProjectUrl>https://github.com/Easy-Microservise/Serialization</PackageProjectUrl>
+		<LangVersion>latest</LangVersion>
+		<TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+		<DocumentationFile>.\bin\$(Configuration)\$(TargetFramework)\EasyMicroservice.Serialization.BinaryGo.xml</DocumentationFile>
+	</PropertyGroup>
+	
+	<ItemGroup>
+		<PackageReference Include="BinaryGo" Version="0.1.0.6" />
+	</ItemGroup>
+	
+	<ItemGroup>
+	  <ProjectReference Include="..\EasyMicroservice.Serialization\EasyMicroservice.Serialization.csproj" />
+	</ItemGroup>
+</Project>
