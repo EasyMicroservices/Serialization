@@ -2,12 +2,12 @@
 using Newtonsoft.Json;
 using System;
 
-namespace EasyMicroservice.Serialization.NewtonSoft.Json.Providers.SerializationProvider
+namespace EasyMicroservice.Serialization.Newtonsoft.Json.Providers
 {
     /// <summary>
     /// 
     /// </summary>
-    public class NewtonSoftJsonProvider : BaseTextSerializationProvider
+    public class NewtonsoftJsonProvider : BaseTextSerializationProvider
     {
         /// <summary>
         /// 

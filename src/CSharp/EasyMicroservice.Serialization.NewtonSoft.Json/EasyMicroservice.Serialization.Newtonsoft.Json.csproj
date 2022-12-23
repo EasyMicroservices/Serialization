@@ -12,7 +12,7 @@
 		<PackageProjectUrl>https://github.com/Easy-Microservise/Serialization</PackageProjectUrl>
 		<LangVersion>latest</LangVersion>
 		<TreatWarningsAsErrors>true</TreatWarningsAsErrors>
-		<DocumentationFile>.\bin\$(Configuration)\$(TargetFramework)\EasyMicroservice.Serialization.NewtonSoft.Json.xml</DocumentationFile>
+		<DocumentationFile>.\bin\$(Configuration)\$(TargetFramework)\EasyMicroservice.Serialization.Newtonsoft.Json.xml</DocumentationFile>
 	</PropertyGroup>
 	<ItemGroup>
 		<ProjectReference Include="..\EasyMicroservice.Serialization\EasyMicroservice.Serialization.csproj" />
