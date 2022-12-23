@@ -14,8 +14,7 @@ namespace EasyMicroservice.Serialization.Tests.Providers
             _provider = provider;
         }
 
-        []
-        public async Task 
+        
        
     }
 }
