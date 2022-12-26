@@ -1,11 +1,12 @@
 ﻿using System;
 
-namespace EasyMicroservice.Serialization.Interfaces
+namespace EasyMicroservices.Serialization.Interfaces
 {
     /// <summary>
     /// 
     /// </summary>
-    public interface IBaseSerialization {
+    public interface IBaseSerialization
+    {
         /// <summary>
         /// 
         /// </summary>
@@ -14,5 +15,5 @@ namespace EasyMicroservice.Serialization.Interfaces
         bool CanConvert(Type objectType);
 
     }
-  
+
 }

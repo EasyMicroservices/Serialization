@@ -1,25 +1,22 @@
-﻿using System;
-namespace EasyMicroservice.Serialization.Interfaces
+﻿namespace EasyMicroservices.Serialization.Interfaces
 {
     /// <summary>
     /// 
     /// </summary>
-    public interface IBinarySerialization : IBaseSerialization
+    public interface ITextSerialization : IBaseSerialization
     {
         /// <summary>
         /// 
         /// </summary>
         /// <param name="value"></param>
         /// <returns></returns>
-        ReadOnlySpan<byte> Serialize(object value);
+        string Serialize(object value);
         /// <summary>
         /// 
         /// </summary>
         /// <typeparam name="T"></typeparam>
-        /// <param name="reader"></param>
+        /// <param name="value"></param>
         /// <returns></returns>
-        T Deserialize<T>(ReadOnlySpan<byte> reader);
-
+        T Deserialize<T>(string value);
     }
-
 }

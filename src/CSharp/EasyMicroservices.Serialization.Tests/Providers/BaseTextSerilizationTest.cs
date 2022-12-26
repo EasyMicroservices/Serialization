@@ -1,10 +1,6 @@
-﻿using EasyMicroservice.Serialization.Interfaces;
-using System;
-using System.Collections.Generic;
-using System.Text;
-using System.Threading.Tasks;
+﻿using EasyMicroservices.Serialization.Interfaces;
 
-namespace EasyMicroservice.Serialization.Tests.Providers
+namespace EasyMicroservices.Serialization.Tests.Providers
 {
     public abstract class BaseTextSerilizationTest
     {
@@ -13,8 +9,5 @@ namespace EasyMicroservice.Serialization.Tests.Providers
         {
             _provider = provider;
         }
-
-        
-       
     }
 }

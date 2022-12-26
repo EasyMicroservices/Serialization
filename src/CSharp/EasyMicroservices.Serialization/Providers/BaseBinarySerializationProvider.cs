@@ -1,7 +1,7 @@
-﻿using EasyMicroservice.Serialization.Interfaces;
+﻿using EasyMicroservices.Serialization.Interfaces;
 using System;
 
-namespace EasyMicroservice.Serialization.Providers.SerializationProvider
+namespace EasyMicroservices.Serialization.Providers
 {
     /// <summary>
     /// 

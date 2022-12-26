@@ -3,15 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31912.275
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EasyMicroservice.Serialization", "EasyMicroservice.Serialization\EasyMicroservice.Serialization.csproj", "{E100639B-3CFE-4F7D-992C-AF1F9B5044B0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EasyMicroservices.Serialization", "EasyMicroservices.Serialization\EasyMicroservices.Serialization.csproj", "{E100639B-3CFE-4F7D-992C-AF1F9B5044B0}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EasyMicroservice.Serialization.Tests", "EasyMicroservice.Serialization.Tests\EasyMicroservice.Serialization.Tests.csproj", "{0D486E0E-E883-485F-A2C7-D0AFAD752A9D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EasyMicroservices.Serialization.Tests", "EasyMicroservices.Serialization.Tests\EasyMicroservices.Serialization.Tests.csproj", "{0D486E0E-E883-485F-A2C7-D0AFAD752A9D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EasyMicroservice.Serialization.BinaryGo", "EasyMicroservice.Serialization.BinaryGo\EasyMicroservice.Serialization.BinaryGo.csproj", "{442A163A-BC10-4F1C-8590-AE6E50771D90}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EasyMicroservices.Serialization.BinaryGo", "EasyMicroservices.Serialization.BinaryGo\EasyMicroservices.Serialization.BinaryGo.csproj", "{442A163A-BC10-4F1C-8590-AE6E50771D90}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EasyMicroservice.Serialization.Newtonsoft.Json", "EasyMicroservice.Serialization.NewtonSoft.Json\EasyMicroservice.Serialization.Newtonsoft.Json.csproj", "{6CA7DFEE-6B4F-4747-9CF8-DB7E2F371686}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EasyMicroservices.Serialization.Newtonsoft.Json", "EasyMicroservices.Serialization.NewtonSoft.Json\EasyMicroservices.Serialization.Newtonsoft.Json.csproj", "{6CA7DFEE-6B4F-4747-9CF8-DB7E2F371686}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EasyMicroservice.Serialization.System.Text.Json", "EasyMicroservice.Serialization.System.Text.Json\EasyMicroservice.Serialization.System.Text.Json.csproj", "{BCEB9E2F-36C5-4000-80C7-C3E3726531D0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EasyMicroservices.Serialization.System.Text.Json", "EasyMicroservices.Serialization.System.Text.Json\EasyMicroservices.Serialization.System.Text.Json.csproj", "{BCEB9E2F-36C5-4000-80C7-C3E3726531D0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
