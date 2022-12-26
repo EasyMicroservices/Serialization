@@ -3,19 +3,20 @@
 	<PropertyGroup>
 		<TargetFrameworks>netstandard2.0;netstandard2.1;net6.0;net45</TargetFrameworks>
 		<Platforms>AnyCPU;x64;x86</Platforms>
-		<Authors>Ali Yousefi Telori, Mahdi Delzende</Authors>
+		<Authors>EasyMicroservices</Authors>
 		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
 		<Version>0.0.0.1</Version>
 		<Description>Serilize and deserilize wrapper</Description>
-		<Copyright>EasyMicroservice@gmail.com</Copyright>
+		<Copyright>EasyMicroservices@gmail.com</Copyright>
 		<PackageTags>Serilize,deserilize</PackageTags>
-		<PackageProjectUrl>https://github.com/Easy-Microservise/Serialization</PackageProjectUrl>
+		<PackageProjectUrl>https://github.com/EasyMicroservices/Serialization</PackageProjectUrl>
 		<LangVersion>latest</LangVersion>
 		<TreatWarningsAsErrors>true</TreatWarningsAsErrors>
 		<DocumentationFile>.\bin\$(Configuration)\$(TargetFramework)\EasyMicroservice.Serialization.Newtonsoft.Json.xml</DocumentationFile>
 	</PropertyGroup>
 	<ItemGroup>
-		<ProjectReference Include="..\EasyMicroservice.Serialization\EasyMicroservice.Serialization.csproj" />
+		<ProjectReference Include="..\EasyMicroservice.Serialization\EasyMicroservices.Serialization.csproj" />
+		<ProjectReference Include="..\EasyMicroservices.Serialization\EasyMicroservices.Serialization.csproj" />
 		<PackageReference Include="Newtonsoft.Json" Version="13.0.2" />
 	</ItemGroup>
 </Project>

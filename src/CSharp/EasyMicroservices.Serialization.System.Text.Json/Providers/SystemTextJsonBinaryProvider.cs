@@ -1,5 +1,5 @@
 ﻿#if (!NET45)
-using EasyMicroservice.Serialization.Providers.SerializationProvider;
+using EasyMicroservices.Serialization.Providers;
 using System;
 using System.Text.Json;
 

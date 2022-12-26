@@ -1,8 +1,9 @@
 ﻿using BinaryGo.Binary;
 using BinaryGo.Binary.Deserialize;
+using EasyMicroservices.Serialization.Providers;
 using System;
 
-namespace EasyMicroservice.Serialization.Providers.SerializationProvider
+namespace EasyMicroservices.Serialization.BinaryGo.Providers
 {
     /// <summary>
     /// 

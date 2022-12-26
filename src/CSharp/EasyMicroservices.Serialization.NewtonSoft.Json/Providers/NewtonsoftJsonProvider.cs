@@ -1,8 +1,8 @@
-﻿using EasyMicroservice.Serialization.Providers.SerializationProvider;
+﻿using EasyMicroservices.Serialization.Providers;
 using Newtonsoft.Json;
 using System;
 
-namespace EasyMicroservice.Serialization.Newtonsoft.Json.Providers
+namespace EasyMicroservices.Serialization.Newtonsoft.Json.Providers
 {
     /// <summary>
     /// 

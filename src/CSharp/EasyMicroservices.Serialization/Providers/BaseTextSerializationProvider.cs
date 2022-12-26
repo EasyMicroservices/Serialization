@@ -1,15 +1,14 @@
-﻿#if(!NET45)
-using EasyMicroservice.Serialization.Providers.SerializationProvider;
+﻿using EasyMicroservices.Serialization.Interfaces;
 using System;
-using System.Text.Json;
 
-namespace EasyMicroservice.Serialization.System.Text.Json.Providers
+namespace EasyMicroservices.Serialization.Providers
 {
     /// <summary>
     /// 
     /// </summary>
-    public class SystemTextJsonProvider : BaseTextSerializationProvider
+    public abstract class BaseTextSerializationProvider : BaseProvider, ITextSerialization
     {
+
         /// <summary>
         /// 
         /// </summary>
@@ -17,20 +16,13 @@ namespace EasyMicroservice.Serialization.System.Text.Json.Providers
         /// <param name="value"></param>
         /// <returns></returns>
         /// <exception cref="NotImplementedException"></exception>
-        public override T Deserialize<T>(string value)
-        {
-            return JsonSerializer.Deserialize<T>(value);
-        }
+        public abstract T Deserialize<T>(string value);
         /// <summary>
         /// 
         /// </summary>
         /// <param name="value"></param>
         /// <returns></returns>
         /// <exception cref="NotImplementedException"></exception>
-        public override string Serialize(object value)
-        {
-            return JsonSerializer.Serialize(value);
-        }
+        public abstract string Serialize(object value);
     }
 }
-#endif
