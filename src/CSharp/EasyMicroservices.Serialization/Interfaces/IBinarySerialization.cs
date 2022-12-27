@@ -2,18 +2,18 @@
 namespace EasyMicroservices.Serialization.Interfaces
 {
     /// <summary>
-    /// 
+    /// serializa to byte and visa versa
     /// </summary>
     public interface IBinarySerialization : IBaseSerialization
     {
         /// <summary>
-        /// 
+        /// serializa to byte array
         /// </summary>
         /// <param name="value"></param>
         /// <returns></returns>
         ReadOnlySpan<byte> Serialize(object value);
         /// <summary>
-        /// 
+        /// Deserialize from byte
         /// </summary>
         /// <typeparam name="T"></typeparam>
         /// <param name="reader"></param>

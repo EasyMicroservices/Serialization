@@ -6,13 +6,12 @@ using System.Text.Json;
 namespace EasyMicroservice.Serialization.System.Text.Json.Providers
 {
     /// <summary>
-    /// 
+    ///  use mocrosoft SystemTextJson package as text serialization provider 
     /// </summary>
     public class SystemTextJsonProvider : BaseTextSerializationProvider
     {
         /// <summary>
-        /// 
-        /// </summary>
+        /// Deserialize from string        /// </summary>
         /// <typeparam name="T"></typeparam>
         /// <param name="value"></param>
         /// <returns></returns>
@@ -22,7 +21,7 @@ namespace EasyMicroservice.Serialization.System.Text.Json.Providers
             return JsonSerializer.Deserialize<T>(value);
         }
         /// <summary>
-        /// 
+        /// Serialize to string
         /// </summary>
         /// <param name="value"></param>
         /// <returns></returns>

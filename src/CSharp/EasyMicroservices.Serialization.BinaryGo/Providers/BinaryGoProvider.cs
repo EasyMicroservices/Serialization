@@ -6,12 +6,12 @@ using System;
 namespace EasyMicroservices.Serialization.BinaryGo.Providers
 {
     /// <summary>
-    /// 
+    /// use binary go package as binary serialization provider 
     /// </summary>
     public class BinaryGoProvider : BaseBinarySerializationProvider
     {
         /// <summary>
-        /// 
+        /// Deserialize from byte
         /// </summary>
         /// <typeparam name="T"></typeparam>
         /// <param name="reader"></param>
@@ -22,7 +22,7 @@ namespace EasyMicroservices.Serialization.BinaryGo.Providers
         }
 
         /// <summary>
-        /// 
+        /// Serialize to byte
         /// </summary>
         /// <param name="value"></param>
         /// <returns></returns>
