@@ -23,9 +23,10 @@ namespace EasyMicroservices.Serialization.Tests.Providers.TextSerilization
         }
 
         [Theory]
-        [InlineData("Mahdi", 30, Gender.Male)]
-        [InlineData("Maryam", 15, Gender.Female)]
-        public async Task Serilize(string name, int age, Gender gender)
+        [InlineData("Mahdi", 30, Gender.Male, "{\"Name\":\"Mahdi\",\"Age\":30,\"Gender\":1}")]
+        [InlineData("Maryam", 15, Gender.Female, "{\"Name\":\"Maryam\",\"Age\":15,\"Gender\":2}")]
+        [InlineData("Maryam", 15, Gender.None, "{\"Name\":\"Maryam\",\"Age\":15,\"Gender\":0}")]
+        public async Task Serilize(string name, int age, Gender gender, string expected)
         {
             var request = new ClassToSerialize()
             {
@@ -34,28 +35,23 @@ namespace EasyMicroservices.Serialization.Tests.Providers.TextSerilization
                 Gender = gender
             };
             var result = _provider.Serialize(request);
-            Assert.Equal(result, "{\"Name\":\"" + name + "\",\"Age\":" + age + "\",\"Gender\":" + (int)gender + "}");
+
+            Assert.Equal(result, expected);
         }
         /// <summary>
         /// میخواهیم یک متن جیسون را به کلاس تبدیل کنیم
         /// </summary>
         /// <param name="name"></param>
         /// <param name="age"></param>
-        [InlineData("Mahdi", 30, Gender.Male)]
-        [InlineData("Maryam", 15, Gender.Female)]
+        [InlineData("{\"Name\":\"Mahdi\",\"Age\":30,\"Gender\":1}","Mahdi", 30, Gender.Male)]
+        [InlineData("{\"Name\":\"Maryam\",\"Age\":15,\"Gender\":2}","Maryam", 15, Gender.Female )]
+        [InlineData("{\"Name\":\"Maryam\",\"Age\":15,\"Gender\":0}","Maryam", 15, Gender.None )]
         [Theory]
-        public async Task Deserilize(string name, int age, Gender gender)
-        {
-            var request = new ClassToSerialize()
-            {
-                Name = name,
-                Age = age,
-                Gender = gender
-            };
-            var json = _provider.Serialize(request);
+        public async Task Deserilize(string json,string name, int age, Gender gender)
+        { 
             var result = _provider.Deserialize<ClassToSerialize>(json);
 
-            Assert.True(result.Name == request.Name && result.Age == request.Age && result.Gender == request.Gender);
+            Assert.True(result.Name == name && result.Age == age && result.Gender == gender);
         }
 
     }
