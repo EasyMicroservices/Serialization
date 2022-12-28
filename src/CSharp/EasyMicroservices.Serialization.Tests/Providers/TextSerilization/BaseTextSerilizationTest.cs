@@ -1,5 +1,5 @@
-﻿using EasyMicroservices.Serialization.Interfaces;
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
+using EasyMicroservices.Serialization.Interfaces;
 using Xunit;
 
 namespace EasyMicroservices.Serialization.Tests.Providers.TextSerilization
@@ -43,12 +43,12 @@ namespace EasyMicroservices.Serialization.Tests.Providers.TextSerilization
         /// </summary>
         /// <param name="name"></param>
         /// <param name="age"></param>
-        [InlineData("{\"Name\":\"Mahdi\",\"Age\":30,\"Gender\":1}","Mahdi", 30, Gender.Male)]
-        [InlineData("{\"Name\":\"Maryam\",\"Age\":15,\"Gender\":2}","Maryam", 15, Gender.Female )]
-        [InlineData("{\"Name\":\"Maryam\",\"Age\":15,\"Gender\":0}","Maryam", 15, Gender.None )]
+        [InlineData("{\"Name\":\"Mahdi\",\"Age\":30,\"Gender\":1}", "Mahdi", 30, Gender.Male)]
+        [InlineData("{\"Name\":\"Maryam\",\"Age\":15,\"Gender\":2}", "Maryam", 15, Gender.Female)]
+        [InlineData("{\"Name\":\"Maryam\",\"Age\":15,\"Gender\":0}", "Maryam", 15, Gender.None)]
         [Theory]
-        public async Task Deserilize(string json,string name, int age, Gender gender)
-        { 
+        public async Task Deserilize(string json, string name, int age, Gender gender)
+        {
             var result = _provider.Deserialize<ClassToSerialize>(json);
 
             Assert.True(result.Name == name && result.Age == age && result.Gender == gender);

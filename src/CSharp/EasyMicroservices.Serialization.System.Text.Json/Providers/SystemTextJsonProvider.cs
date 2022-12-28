@@ -1,7 +1,7 @@
 ﻿#if(!NET45)
-using EasyMicroservices.Serialization.Providers;
 using System;
 using System.Text.Json;
+using EasyMicroservices.Serialization.Providers;
 
 namespace EasyMicroservices.Serialization.System.Text.Json.Providers
 {
