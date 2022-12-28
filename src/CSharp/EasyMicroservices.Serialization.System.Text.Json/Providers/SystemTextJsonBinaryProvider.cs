@@ -3,7 +3,7 @@ using EasyMicroservices.Serialization.Providers;
 using System;
 using System.Text.Json;
 
-namespace EasyMicroservice.Serialization.System.Text.Json.Providers
+namespace EasyMicroservices.Serialization.System.Text.Json.Providers
 {
     /// <summary>
     ///  use mocrosoft SystemTextJson package as binary serialization provider 
