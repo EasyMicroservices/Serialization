@@ -1,7 +1,7 @@
-﻿using BinaryGo.Binary;
+﻿using System;
+using BinaryGo.Binary;
 using BinaryGo.Binary.Deserialize;
 using EasyMicroservices.Serialization.Providers;
-using System;
 
 namespace EasyMicroservices.Serialization.BinaryGo.Providers
 {
