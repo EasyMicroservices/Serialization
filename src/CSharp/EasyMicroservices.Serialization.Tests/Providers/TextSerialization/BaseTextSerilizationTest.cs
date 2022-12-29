@@ -1,6 +1,5 @@
-﻿using EasyMicroservices.Serialization.Interfaces;
-using EasyMicroservices.Serialization.Tests.Providers.Models;
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
+using EasyMicroservices.Serialization.Interfaces;
 using Xunit;
 
 namespace EasyMicroservices.Serialization.Tests.Providers.TextSerialization

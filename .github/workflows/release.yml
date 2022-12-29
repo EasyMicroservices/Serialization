@@ -1,0 +1,35 @@
+name: Release
+
+on: [workflow_dispatch]
+
+jobs:
+  build-test-prep-release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-dotnet@v1
+        with:
+          dotnet-version:  |
+            3.1.x
+            5.0.x
+            6.0.x
+
+        env:
+          DOTNET_INSTALL_DIR: /usr/share/dotnet
+      - name: build and test
+        run: |
+          dotnet restore ./src/CSharp/EasyMicroservices.Serialization.sln
+          dotnet build ./src/CSharp/EasyMicroservices.Serialization.sln --no-restore
+          dotnet test ./src/CSharp/EasyMicroservices.Serialization.sln --no-build
+      - name: setup semantic-release
+        run: |
+          npm install -D semantic-release
+          npm install -D @semantic-release/git
+          npm install -D @semantic-release/changelog
+          npm install -D @semantic-release/exec
+          npm install -D semantic-release-dotnet
+          npm install -D conventional-changelog-conventionalcommits
+      - name: run semantic-release
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: npx semantic-release

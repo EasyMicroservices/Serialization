@@ -1,0 +1,37 @@
+name: dotnet format
+on:
+  push:
+    branches: [develop]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version:  | 
+            3.1.x
+            5.0.x
+            6.0.x
+      - name: Run dotnet format
+        id: format
+        uses: jfversluis/dotnet-format@v1.0.5
+        with:
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
+          action: "fix"
+          workspace: "./src/CSharp/EasyMicroservices.Serialization.sln"
+      - name: Test
+        run: dotnet test ./src/CSharp/EasyMicroservices.Serialization.sln
+      - name: Commit files
+        if: steps.format.outputs.has-changes == 'true'
+        uses: EndBug/add-and-commit@v4.1.0
+        with:
+          author_name: Github Actions
+          author_email: actions@github.com
+          message: "chore: Automated dotnet-format update"
+          ref: ${{ github.head_ref }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

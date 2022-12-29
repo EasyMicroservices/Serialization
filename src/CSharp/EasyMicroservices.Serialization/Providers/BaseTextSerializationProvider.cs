@@ -1,5 +1,5 @@
-﻿using EasyMicroservices.Serialization.Interfaces;
-using System;
+﻿using System;
+using EasyMicroservices.Serialization.Interfaces;
 
 namespace EasyMicroservices.Serialization.Providers
 {
