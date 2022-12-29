@@ -21,7 +21,7 @@ namespace EasyMicroservices.Serialization.YamlDotNet.Providers
         public override T Deserialize<T>(string value)
         {
             var deserializer = new DeserializerBuilder()
-            .WithNamingConvention(PascalCaseNamingConvention.Instance)
+            //.WithNamingConvention(PascalCaseNamingConvention.Instance)
             .Build();
 
             return deserializer.Deserialize<T>(value);
@@ -35,7 +35,7 @@ namespace EasyMicroservices.Serialization.YamlDotNet.Providers
         public override string Serialize(object value)
         {
             var serializer = new SerializerBuilder()
-                .WithNamingConvention(CamelCaseNamingConvention.Instance)
+                //.WithNamingConvention(CamelCaseNamingConvention.Instance)
                 .Build();
 
             return serializer.Serialize(value);
