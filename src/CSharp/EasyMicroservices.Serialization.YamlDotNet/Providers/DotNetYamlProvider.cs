@@ -1,17 +1,15 @@
 ﻿#if(!NET45)
 using System;
-using System.Text.Json;
 using EasyMicroservices.Serialization.Providers;
-using YamlDotNet.Core;
 using YamlDotNet.Serialization;
 using YamlDotNet.Serialization.NamingConventions;
 
-namespace EasyMicroservices.Serialization.Yaml.Providers
+namespace EasyMicroservices.Serialization.YamlDotNet.Providers
 {
     /// <summary>
     ///  use YamlDotNet as text serialization provider 
     /// </summary>
-    public class DotNetYamlProvider : BaseTextSerializationProvider
+    public class YamlDotNetProvider : BaseTextSerializationProvider
     {
         /// <summary>
         /// Deserialize from string
