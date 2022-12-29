@@ -1,10 +1,7 @@
-﻿using System.Buffers;
-using System.Linq;
-using System.Threading.Tasks;
-using EasyMicroservices.Serialization.Interfaces;
+﻿using EasyMicroservices.Serialization.Interfaces;
 using EasyMicroservices.Serialization.Tests.Providers.Models;
 using Xunit;
-
+using System.Buffers;
 namespace EasyMicroservices.Serialization.Tests.Providers.BinarySerialization
 {
     public abstract class BaseBinarySerializationTest
