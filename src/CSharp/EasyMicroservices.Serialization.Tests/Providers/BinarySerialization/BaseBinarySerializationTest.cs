@@ -1,8 +1,7 @@
-﻿using System.Buffers;
-using System.Linq;
-using EasyMicroservices.Serialization.Interfaces;
+﻿using EasyMicroservices.Serialization.Interfaces;
 using EasyMicroservices.Serialization.Tests.Providers.Models;
 using Xunit;
+using System.Buffers;
 namespace EasyMicroservices.Serialization.Tests.Providers.BinarySerialization
 {
     public abstract class BaseBinarySerializationTest
@@ -20,11 +19,14 @@ namespace EasyMicroservices.Serialization.Tests.Providers.BinarySerialization
             _provider = provider;
         }
 
-        [Theory]
-        [InlineData("Mahdi", 30, Gender.Male, 15)]
-        [InlineData("Maryam", 15, Gender.Female, 16)]
-        [InlineData("ali", 15, Gender.None, 13)]
-        public void Serilize(string name, int age, Gender gender, int expectedLength)
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="name"></param>
+        /// <param name="age"></param>
+        /// <param name="gender"></param>
+        /// <param name="expectedLength"></param>
+        public virtual void Serilize(string name, int age, Gender gender, int expectedLength)
         {
             var request = new ClassToSerialize()
             {
@@ -44,11 +46,11 @@ namespace EasyMicroservices.Serialization.Tests.Providers.BinarySerialization
 
         }
 
-        [Theory]
-        [InlineData(10)] // fixstr
-        [InlineData(1000)] // str 16
-        [InlineData(100000)] // str 32
-        public void DeserializeSimpleByteArray(int arrayLength)
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="arrayLength"></param>
+        public virtual void DeserializeSimpleByteArray(int arrayLength)
         {
             var sourceBytes = Enumerable.Range(0, arrayLength).Select(i => unchecked((byte)i)).ToArray(); // long byte array
 

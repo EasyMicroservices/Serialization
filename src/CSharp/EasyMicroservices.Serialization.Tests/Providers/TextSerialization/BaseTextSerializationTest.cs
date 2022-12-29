@@ -8,7 +8,7 @@ namespace EasyMicroservices.Serialization.Tests.Providers.TextSerialization
     /// <summary>
     /// base class for test
     /// </summary>
-    public abstract class BaseTextSerilizationTest
+    public abstract class BaseTextSerializationTest
     {
         /// <summary>
         /// text serilaze provider
@@ -18,16 +18,19 @@ namespace EasyMicroservices.Serialization.Tests.Providers.TextSerialization
         /// 
         /// </summary>
         /// <param name="provider"></param>
-        public BaseTextSerilizationTest(ITextSerialization provider)
+        public BaseTextSerializationTest(ITextSerialization provider)
         {
             _provider = provider;
         }
-
-        [Theory]
-        [InlineData("Mahdi", 30, Gender.Male, "{\"Name\":\"Mahdi\",\"Age\":30,\"Gender\":1}")]
-        [InlineData("Maryam", 15, Gender.Female, "{\"Name\":\"Maryam\",\"Age\":15,\"Gender\":2}")]
-        [InlineData("ali", 15, Gender.None, "{\"Name\":\"ali\",\"Age\":15,\"Gender\":0}")]
-        public async Task Serilize(string name, int age, Gender gender, string expected)
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="name"></param>
+        /// <param name="age"></param>
+        /// <param name="gender"></param>
+        /// <param name="expected"></param>
+        /// <returns></returns>
+        public virtual async Task Serilize(string name, int age, Gender gender, string expected)
         {
             var request = new ClassToSerialize()
             {
@@ -39,16 +42,16 @@ namespace EasyMicroservices.Serialization.Tests.Providers.TextSerialization
 
             Assert.Equal(result, expected);
         }
+
         /// <summary>
-        /// میخواهیم یک متن جیسون را به کلاس تبدیل کنیم
+        /// 
         /// </summary>
+        /// <param name="json"></param>
         /// <param name="name"></param>
         /// <param name="age"></param>
-        [InlineData("{\"Name\":\"Mahdi\",\"Age\":30,\"Gender\":1}", "Mahdi", 30, Gender.Male)]
-        [InlineData("{\"Name\":\"Maryam\",\"Age\":15,\"Gender\":2}", "Maryam", 15, Gender.Female)]
-        [InlineData("{\"Name\":\"ali\",\"Age\":15,\"Gender\":0}", "ali", 15, Gender.None)]
-        [Theory]
-        public async Task Deserilize(string json, string name, int age, Gender gender)
+        /// <param name="gender"></param>
+        /// <returns></returns>
+        public virtual async Task Deserilize(string json, string name, int age, Gender gender)
         {
             var result = _provider.Deserialize<ClassToSerialize>(json);
 
