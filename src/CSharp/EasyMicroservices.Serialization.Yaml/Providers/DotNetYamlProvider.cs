@@ -6,7 +6,7 @@ using YamlDotNet.Core;
 using YamlDotNet.Serialization;
 using YamlDotNet.Serialization.NamingConventions;
 
-namespace EasyMicroservices.Serialization.System.Text.Json.Providers
+namespace EasyMicroservices.Serialization.Yaml.Providers
 {
     /// <summary>
     ///  use YamlDotNet as text serialization provider 
