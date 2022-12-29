@@ -14,9 +14,9 @@
 		<TreatWarningsAsErrors>true</TreatWarningsAsErrors>
 		<DocumentationFile>.\bin\$(Configuration)\$(TargetFramework)\EasyMicroservice.Serialization.BinaryGo.xml</DocumentationFile>
 	</PropertyGroup>
-	
+
 	<ItemGroup>
-		<PackageReference Include="BinaryGo" Version="0.1.0.6" />
+	  <PackageReference Include="BinaryGo" Version="0.1.0.6" />
 	</ItemGroup>
 	
 	<ItemGroup>

@@ -28,7 +28,7 @@ namespace EasyMicroservices.Serialization.System.Text.Json.Providers
         /// <param name="value"></param>
         /// <returns></returns>
         /// <exception cref="NotImplementedException"></exception>
-        public override ReadOnlySpan<byte> Serialize(object value)
+        public override ReadOnlySpan<byte> Serialize<T>(T value)
         {
             return JsonSerializer.SerializeToUtf8Bytes(value);
         }

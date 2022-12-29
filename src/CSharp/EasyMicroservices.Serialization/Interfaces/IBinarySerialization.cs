@@ -11,7 +11,7 @@ namespace EasyMicroservices.Serialization.Interfaces
         /// </summary>
         /// <param name="value"></param>
         /// <returns></returns>
-        ReadOnlySpan<byte> Serialize(object value);
+        ReadOnlySpan<byte> Serialize<T>(T value);
         /// <summary>
         /// Deserialize from byte
         /// </summary>

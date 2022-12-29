@@ -1,8 +1,9 @@
 ﻿using System.Threading.Tasks;
 using EasyMicroservices.Serialization.Interfaces;
+using EasyMicroservices.Serialization.Tests.Providers.Models;
 using Xunit;
 
-namespace EasyMicroservices.Serialization.Tests.Providers.TextSerilization
+namespace EasyMicroservices.Serialization.Tests.Providers.TextSerialization
 {
     /// <summary>
     /// base class for test
@@ -25,7 +26,7 @@ namespace EasyMicroservices.Serialization.Tests.Providers.TextSerilization
         [Theory]
         [InlineData("Mahdi", 30, Gender.Male, "{\"Name\":\"Mahdi\",\"Age\":30,\"Gender\":1}")]
         [InlineData("Maryam", 15, Gender.Female, "{\"Name\":\"Maryam\",\"Age\":15,\"Gender\":2}")]
-        [InlineData("Maryam", 15, Gender.None, "{\"Name\":\"Maryam\",\"Age\":15,\"Gender\":0}")]
+        [InlineData("ali", 15, Gender.None, "{\"Name\":\"ali\",\"Age\":15,\"Gender\":0}")]
         public async Task Serilize(string name, int age, Gender gender, string expected)
         {
             var request = new ClassToSerialize()
@@ -45,7 +46,7 @@ namespace EasyMicroservices.Serialization.Tests.Providers.TextSerilization
         /// <param name="age"></param>
         [InlineData("{\"Name\":\"Mahdi\",\"Age\":30,\"Gender\":1}", "Mahdi", 30, Gender.Male)]
         [InlineData("{\"Name\":\"Maryam\",\"Age\":15,\"Gender\":2}", "Maryam", 15, Gender.Female)]
-        [InlineData("{\"Name\":\"Maryam\",\"Age\":15,\"Gender\":0}", "Maryam", 15, Gender.None)]
+        [InlineData("{\"Name\":\"ali\",\"Age\":15,\"Gender\":0}", "ali", 15, Gender.None)]
         [Theory]
         public async Task Deserilize(string json, string name, int age, Gender gender)
         {
@@ -54,18 +55,5 @@ namespace EasyMicroservices.Serialization.Tests.Providers.TextSerilization
             Assert.True(result.Name == name && result.Age == age && result.Gender == gender);
         }
 
-    }
-
-    public class ClassToSerialize
-    {
-        public string Name { get; set; }
-        public int Age { get; set; }
-        public Gender Gender { get; set; }
-    }
-    public enum Gender
-    {
-        None = 0,
-        Male = 1,
-        Female = 2
     }
 }

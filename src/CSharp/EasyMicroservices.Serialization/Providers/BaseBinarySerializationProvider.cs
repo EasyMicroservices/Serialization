@@ -20,6 +20,6 @@ namespace EasyMicroservices.Serialization.Providers
         /// </summary>
         /// <param name="value"></param>
         /// <returns></returns>
-        public abstract ReadOnlySpan<byte> Serialize(object value);
+        public abstract ReadOnlySpan<byte> Serialize<T>(T value);
     }
 }
