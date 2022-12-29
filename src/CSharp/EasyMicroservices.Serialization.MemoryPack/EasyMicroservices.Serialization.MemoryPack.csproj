@@ -8,4 +8,8 @@
     <PackageReference Include="MemoryPack" Version="1.9.7" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\EasyMicroservices.Serialization\EasyMicroservices.Serialization.csproj" />
+  </ItemGroup>
+
 </Project>

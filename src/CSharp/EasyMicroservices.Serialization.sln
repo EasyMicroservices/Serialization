@@ -13,7 +13,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EasyMicroservices.Serializa
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EasyMicroservices.Serialization.System.Text.Json", "EasyMicroservices.Serialization.System.Text.Json\EasyMicroservices.Serialization.System.Text.Json.csproj", "{BCEB9E2F-36C5-4000-80C7-C3E3726531D0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EasyMicroservice.MemoryPack", "EasyMicroservice.MemoryPack\EasyMicroservice.MemoryPack.csproj", "{FEC3928B-FD26-459B-AC28-5F64ADF3BEED}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EasyMicroservices.Serialization.MemoryPack", "EasyMicroservices.Serialization.MemoryPack\EasyMicroservices.Serialization.MemoryPack.csproj", "{579B42BC-8F4C-495C-9B53-5A5CBF86EAE3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,10 +41,10 @@ Global
 		{BCEB9E2F-36C5-4000-80C7-C3E3726531D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BCEB9E2F-36C5-4000-80C7-C3E3726531D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BCEB9E2F-36C5-4000-80C7-C3E3726531D0}.Release|Any CPU.Build.0 = Release|Any CPU
-		{FEC3928B-FD26-459B-AC28-5F64ADF3BEED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{FEC3928B-FD26-459B-AC28-5F64ADF3BEED}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{FEC3928B-FD26-459B-AC28-5F64ADF3BEED}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{FEC3928B-FD26-459B-AC28-5F64ADF3BEED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{579B42BC-8F4C-495C-9B53-5A5CBF86EAE3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{579B42BC-8F4C-495C-9B53-5A5CBF86EAE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{579B42BC-8F4C-495C-9B53-5A5CBF86EAE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{579B42BC-8F4C-495C-9B53-5A5CBF86EAE3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
