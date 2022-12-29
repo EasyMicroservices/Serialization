@@ -1,4 +1,4 @@
-name: dotnet build and test
+name: Linux (dotnet build and test)
 
 on:
   push:
