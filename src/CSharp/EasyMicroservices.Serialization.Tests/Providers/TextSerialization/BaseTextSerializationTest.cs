@@ -40,7 +40,7 @@ namespace EasyMicroservices.Serialization.Tests.Providers.TextSerialization
             };
             var result = _provider.Serialize(request);
 
-            Assert.Equal(result, expected);
+            Assert.Equal(expected.ToString(), result.ToString());
         }
 
         /// <summary>
