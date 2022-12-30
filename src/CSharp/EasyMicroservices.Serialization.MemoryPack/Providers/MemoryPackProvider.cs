@@ -1,6 +1,6 @@
-﻿using EasyMicroservices.Serialization.Providers;
+﻿using System;
+using EasyMicroservices.Serialization.Providers;
 using MemoryPack;
-using System;
 
 namespace EasyMicroservices.Serialization.MemoryPack.Providers;
 
