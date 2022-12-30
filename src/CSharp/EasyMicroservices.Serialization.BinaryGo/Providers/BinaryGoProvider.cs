@@ -1,7 +1,7 @@
-﻿using BinaryGo.Binary;
+﻿using System;
+using BinaryGo.Binary;
 using BinaryGo.Binary.Deserialize;
 using EasyMicroservices.Serialization.Providers;
-using System;
 
 namespace EasyMicroservices.Serialization.BinaryGo.Providers
 {
@@ -18,7 +18,9 @@ namespace EasyMicroservices.Serialization.BinaryGo.Providers
         /// <returns></returns>
         public override T Deserialize<T>(ReadOnlySpan<byte> reader)
         {
-            return BinaryDeserializer.NormalInstance.Deserialize<T>(reader);
+            var goSerializer = new BinaryDeserializer();
+            goSerializer.Options = new global::BinaryGo.Helpers.BaseOptionInfo();
+            return goSerializer.Deserialize<T>(reader);
         }
 
         /// <summary>
@@ -26,9 +28,11 @@ namespace EasyMicroservices.Serialization.BinaryGo.Providers
         /// </summary>
         /// <param name="value"></param>
         /// <returns></returns>
-        public override ReadOnlySpan<byte> Serialize(object value)
+        public override ReadOnlySpan<byte> Serialize<T>(T value)
         {
-            return BinarySerializer.NormalInstance.Serialize(value);
+            var goSerializer = new BinarySerializer();
+            goSerializer.Options = new global::BinaryGo.Helpers.BaseOptionInfo();
+            return goSerializer.Serialize<T>(value);
         }
     }
 }
