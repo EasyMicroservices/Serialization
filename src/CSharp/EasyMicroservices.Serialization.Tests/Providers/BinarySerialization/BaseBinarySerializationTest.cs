@@ -1,8 +1,8 @@
-﻿using System.Buffers;
-using System.Linq;
-using EasyMicroservices.Serialization.Interfaces;
+﻿using EasyMicroservices.Serialization.Interfaces;
 using EasyMicroservices.Serialization.Tests.Providers.Models;
 using Xunit;
+using System.Buffers;
+using System.Linq;
 
 namespace EasyMicroservices.Serialization.Tests.Providers.BinarySerialization
 {
@@ -13,7 +13,7 @@ namespace EasyMicroservices.Serialization.Tests.Providers.BinarySerialization
         /// </summary>
         public IBinarySerialization _provider { get; }
         /// <summary>
-        /// 
+        ///
         /// </summary>
         /// <param name="provider"></param>
         public BaseBinarySerializationTest(IBinarySerialization provider)
@@ -22,7 +22,7 @@ namespace EasyMicroservices.Serialization.Tests.Providers.BinarySerialization
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         /// <param name="name"></param>
         /// <param name="age"></param>
@@ -49,7 +49,7 @@ namespace EasyMicroservices.Serialization.Tests.Providers.BinarySerialization
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         /// <param name="arrayLength"></param>
         public virtual void DeserializeSimpleByteArray(int arrayLength)
