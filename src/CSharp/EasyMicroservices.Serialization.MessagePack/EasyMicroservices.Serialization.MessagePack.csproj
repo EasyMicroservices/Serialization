@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+    <TargetFrameworks>netcoreapp3.1;net6.0;netstandard2.1;</TargetFrameworks>
+		<Platforms>AnyCPU;x64;x86</Platforms>
+		<Authors>EasyMicroservices</Authors>
+		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+		<Version>0.0.0.1</Version>
+		<Description>Serilize and deserilize wrapper</Description>
+		<Copyright>EasyMicroservices@gmail.com</Copyright>
+		<PackageTags>Serilize,deserilize</PackageTags>
+		<PackageProjectUrl>https://github.com/EasyMicroservices/Serialization</PackageProjectUrl>
+		<LangVersion>latest</LangVersion>
+		<TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <DocumentationFile>.\bin\$(Configuration)\$(TargetFramework)\EasyMicroservice.Serialization.MessagePack.xml</DocumentationFile>
+	</PropertyGroup>
+	<ItemGroup>
+		<ProjectReference Include="..\EasyMicroservices.Serialization\EasyMicroservices.Serialization.csproj" />
+		<PackageReference Include="MessagePack" Version="2.4.59" />
+	</ItemGroup>
+</Project>
