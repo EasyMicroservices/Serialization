@@ -1,8 +1,8 @@
-﻿using EasyMicroservices.Serialization.Interfaces;
+﻿using System.Buffers;
+using System.Linq;
+using EasyMicroservices.Serialization.Interfaces;
 using EasyMicroservices.Serialization.Tests.Providers.Models;
 using Xunit;
-using System.Buffers;
-using System.Linq;
 
 namespace EasyMicroservices.Serialization.Tests.Providers.BinarySerialization
 {
