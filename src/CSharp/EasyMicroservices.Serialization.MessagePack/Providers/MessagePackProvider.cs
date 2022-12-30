@@ -1,6 +1,6 @@
-﻿using EasyMicroservices.Serialization.Providers;
+﻿using System;
+using EasyMicroservices.Serialization.Providers;
 using MessagePack;
-using System;
 
 namespace EasyMicroservices.Serialization.MessagePack.Providers
 {

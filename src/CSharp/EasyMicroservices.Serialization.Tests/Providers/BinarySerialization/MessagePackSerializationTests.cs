@@ -37,12 +37,12 @@ namespace EasyMicroservices.Serialization.Tests.Providers.BinarySerialization
         public void Serilize_ClassWithoutAttributeObject_ShouldThrowException(Type badClassType)
         {
             //Arrange
-            var obj=Activator.CreateInstance(badClassType);
+            var obj = Activator.CreateInstance(badClassType);
 
             //Act
             //Assert
 
-            Assert.Throws<MessagePackSerializationException>(()=>_provider.Serialize(obj));
+            Assert.Throws<MessagePackSerializationException>(() => _provider.Serialize(obj));
         }
 
         public class BadClassWithoutObjectAttribute
