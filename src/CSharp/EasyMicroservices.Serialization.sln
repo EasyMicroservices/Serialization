@@ -16,6 +16,7 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EasyMicroservices.Serialization.YamlDotNet", "EasyMicroservices.Serialization.YamlDotNet\EasyMicroservices.Serialization.YamlDotNet.csproj", "{36C17046-6AE8-44A0-8283-63E392183A61}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EasyMicroservices.Serialization.MessagePack", "EasyMicroservices.Serialization.MessagePack\EasyMicroservices.Serialization.MessagePack.csproj", "{75632461-F3EC-4737-87EC-287CF0B09DD1}"
+EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EasyMicroservices.Serialization.System.Text.Xml", "EasyMicroservices.Serialization.System.Text.Xml\EasyMicroservices.Serialization.System.Text.Xml.csproj", "{1BB18979-2455-46BF-98BE-6BD96E93C666}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EasyMicroservices.Serialization.MemoryPack", "EasyMicroservices.Serialization.MemoryPack\EasyMicroservices.Serialization.MemoryPack.csproj", "{579B42BC-8F4C-495C-9B53-5A5CBF86EAE3}"
@@ -157,6 +158,7 @@ Global
 		{6CA7DFEE-6B4F-4747-9CF8-DB7E2F371686} = {4C1D8DFB-8E24-48E8-BC98-84998830070B}
 		{BCEB9E2F-36C5-4000-80C7-C3E3726531D0} = {4C1D8DFB-8E24-48E8-BC98-84998830070B}
 		{36C17046-6AE8-44A0-8283-63E392183A61} = {4C1D8DFB-8E24-48E8-BC98-84998830070B}
+		{75632461-F3EC-4737-87EC-287CF0B09DD1} = {4C1D8DFB-8E24-48E8-BC98-84998830070B}
 		{1BB18979-2455-46BF-98BE-6BD96E93C666} = {4C1D8DFB-8E24-48E8-BC98-84998830070B}
 		{579B42BC-8F4C-495C-9B53-5A5CBF86EAE3} = {4C1D8DFB-8E24-48E8-BC98-84998830070B}
 		{98415CB1-FAFF-44FD-ABE1-F5590975ED30} = {C6B3890B-46C3-4A90-AC7C-EE4A311BA3E7}

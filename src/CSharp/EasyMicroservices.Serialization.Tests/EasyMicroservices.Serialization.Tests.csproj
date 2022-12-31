@@ -10,6 +10,7 @@
 
   <ItemGroup>
     <PackageReference Include="EasyMicroservices.Tests" Version="0.0.0.2" />
+    <PackageReference Include="EasyMicroservices.Utilities" Version="0.0.0.2" />
     <PackageReference Include="xunit.runner.visualstudio" Version="2.4.0">
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
       <PrivateAssets>all</PrivateAssets>
@@ -25,6 +26,7 @@
 	</ItemGroup>
   
   <ItemGroup Condition="'$(TargetFramework)' != 'net452'">
+    <ProjectReference Include="..\EasyMicroservices.Serialization.MessagePack\EasyMicroservices.Serialization.MessagePack.csproj" />
     <ProjectReference Include="..\EasyMicroservices.Serialization.System.Text.Json\EasyMicroservices.Serialization.System.Text.Json.csproj" />
 	</ItemGroup>
   

@@ -1,4 +1,5 @@
-﻿using System;
+﻿#if (!NET452)
+using System;
 using System.Diagnostics.Contracts;
 using EasyMicroservices.Serialization.MessagePack.Providers;
 using EasyMicroservices.Serialization.Tests.Providers.Models;
@@ -58,3 +59,4 @@ namespace EasyMicroservices.Serialization.Tests.Providers.BinarySerialization
 
     }
 }
+#endif

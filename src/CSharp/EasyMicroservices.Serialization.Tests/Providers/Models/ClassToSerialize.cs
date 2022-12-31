@@ -1,4 +1,5 @@
-﻿using MessagePack;
+﻿#if (!NET452)
+using MessagePack;
 
 namespace EasyMicroservices.Serialization.Tests.Providers.Models
 {
@@ -13,3 +14,14 @@ namespace EasyMicroservices.Serialization.Tests.Providers.Models
         public Gender Gender { get; set; }
     }
 }
+#else
+namespace EasyMicroservices.Serialization.Tests.Providers.Models
+{
+    public class ClassToSerialize
+    {
+        public string Name { get; set; }
+        public int Age { get; set; }
+        public Gender Gender { get; set; }
+    }
+}
+#endif

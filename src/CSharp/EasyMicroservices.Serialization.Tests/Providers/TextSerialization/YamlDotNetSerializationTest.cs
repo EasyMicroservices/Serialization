@@ -26,9 +26,9 @@ namespace EasyMicroservices.Serialization.Tests.Providers.TextSerialization
         /// <returns></returns>
         [Theory]
         [ClassData(typeof(YamlDotNetSerializeDataTest))]
-        public override async Task Serialize(string name, int age, Gender gender, string expected)
+        public override Task Serialize(string name, int age, Gender gender, string expected)
         {
-            await base.Serialize(name, age, gender, expected);
+            return base.Serialize(name, age, gender, expected);
         }
         /// <summary>
         /// yml support json format for deserialization
@@ -40,9 +40,9 @@ namespace EasyMicroservices.Serialization.Tests.Providers.TextSerialization
         /// <returns></returns>  
         [Theory]
         [ClassData(typeof(YamlDotNetDeserializeDataTest))]
-        public override async Task Deserialize(string json, string name, int age, Gender gender)
+        public override Task Deserialize(string json, string name, int age, Gender gender)
         {
-            await base.Deserialize(json, name, age, gender);
+            return base.Deserialize(json, name, age, gender);
         }
     }
     /// <summary>
