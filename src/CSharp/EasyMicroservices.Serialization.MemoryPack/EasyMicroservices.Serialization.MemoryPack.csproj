@@ -2,8 +2,19 @@
 
   <PropertyGroup>
     <TargetFrameworks>net7.0</TargetFrameworks>
+    <Platforms>AnyCPU;x64;x86</Platforms>
+    <Authors>EasyMicroservices</Authors>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Version>0.0.0.1</Version>
+    <Description>Serialize and deserialize wrapper</Description>
+    <Copyright>EasyMicroservice@gmail.com</Copyright>
+    <PackageTags>Serialize,deserialize</PackageTags>
+    <PackageProjectUrl>https://github.com/EasyMicroservices/Serialization</PackageProjectUrl>
+    <LangVersion>latest</LangVersion>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <DocumentationFile>.\bin\$(Configuration)\$(TargetFramework)\EasyMicroservices.Serialization.MemoryPack.xml</DocumentationFile>
   </PropertyGroup>
-
+  
   <ItemGroup>
     <PackageReference Include="MemoryPack" Version="1.9.7" />
   </ItemGroup>

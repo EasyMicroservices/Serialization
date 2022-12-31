@@ -15,7 +15,6 @@ namespace EasyMicroservices.Serialization.System.Text.Xml.Providers
         /// <typeparam name="T"></typeparam>
         /// <param name="value"></param>
         /// <returns></returns>
-        /// <exception cref="NotImplementedException"></exception>
         public override T Deserialize<T>(string value)
         {
             var xmlSerializer = new XmlSerializer(typeof(T));
@@ -26,7 +25,6 @@ namespace EasyMicroservices.Serialization.System.Text.Xml.Providers
         /// </summary>
         /// <param name="value"></param>
         /// <returns></returns>
-        /// <exception cref="NotImplementedException"></exception>
         public override string Serialize(object value)
         {
             XmlSerializer xsSubmit = new XmlSerializer(value.GetType());

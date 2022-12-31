@@ -12,7 +12,8 @@
 		<PackageProjectUrl>https://github.com/EasyMicroservices/Serialization</PackageProjectUrl>
 		<LangVersion>latest</LangVersion>
 		<TreatWarningsAsErrors>true</TreatWarningsAsErrors>
-	</PropertyGroup>
+    <DocumentationFile>.\bin\$(Configuration)\$(TargetFramework)\EasyMicroservices.Serialization.System.Text.Xml.xml</DocumentationFile>
+  </PropertyGroup>
 
 	<ItemGroup>
 	  <PackageReference Include="System.Runtime.Serialization.Xml" Version="4.3.0" />
