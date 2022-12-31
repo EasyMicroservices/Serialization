@@ -19,7 +19,7 @@ public class MemoryPackProvider : BaseBinarySerializationProvider
         return MemoryPackSerializer.Deserialize<T>(reader);
     }
 
-    public override ReadOnlySpan<byte> Serialize(object value)
+    public override ReadOnlySpan<byte> Serialize<T>(T value)
     {
         return MemoryPackSerializer.Serialize(value);
     }
