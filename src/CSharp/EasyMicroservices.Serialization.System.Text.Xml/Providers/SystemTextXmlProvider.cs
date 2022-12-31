@@ -32,7 +32,7 @@ namespace EasyMicroservices.Serialization.System.Text.Xml.Providers
             XmlSerializer xsSubmit = new XmlSerializer(value.GetType());
             using (var sww = new StringWriter())
             {
-                using (XmlTextWriter writer = new XmlTextWriter(sww) { Formatting = Formatting.Indented })
+                using (XmlTextWriter writer = new XmlTextWriter(sww))
                 {
                     xsSubmit.Serialize(writer, value);
                     return sww.ToString();
