@@ -10,12 +10,12 @@ namespace EasyMicroservices.Serialization.Tests.Providers.BinarySerialization
         {
         }
         [Theory]
-        [InlineData("Mahdi", 30, Gender.Male, 15)]
-        [InlineData("Maryam", 15, Gender.Female, 16)]
-        [InlineData("ali", 15, Gender.None, 13)]
-        public override void Serilize(string name, int age, Gender gender, int expectedLength)
+        [InlineData("Mahdi", 30, Gender.Male)]
+        [InlineData("Maryam", 15, Gender.Female)]
+        [InlineData("ali", 15, Gender.None)]
+        public override void Serialize(string name, int age, Gender gender)
         {
-            base.Serilize(name, age, gender, expectedLength);
+            base.Serialize(name, age, gender);
         }
         [Theory]
         [InlineData(10)] // fixstr
