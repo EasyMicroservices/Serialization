@@ -17,21 +17,28 @@ namespace EasyMicroservices.Serialization.Tests.Providers.TextSerialization
         {
         }
 
+#if(NETCOREAPP2_1_OR_GREATER)
         [InlineData("Mahdi", 30, Gender.Male, "<?xml version=\"1.0\" encoding=\"utf-16\"?><ClassToSerialize xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\"><Name>Mahdi</Name><Age>30</Age><Gender>Male</Gender></ClassToSerialize>")]
         [InlineData("Maryam", 15, Gender.Female, "<?xml version=\"1.0\" encoding=\"utf-16\"?><ClassToSerialize xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\"><Name>Maryam</Name><Age>15</Age><Gender>Female</Gender></ClassToSerialize>")]
         [InlineData("ali", 15, Gender.None, "<?xml version=\"1.0\" encoding=\"utf-16\"?><ClassToSerialize xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\"><Name>ali</Name><Age>15</Age><Gender>None</Gender></ClassToSerialize>")]
+#else
+        [InlineData("Mahdi", 30, Gender.Male, "<?xml version=\"1.0\" encoding=\"utf-16\"?><ClassToSerialize xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"><Name>Mahdi</Name><Age>30</Age><Gender>Male</Gender></ClassToSerialize>")]
+        [InlineData("Maryam", 15, Gender.Female, "<?xml version=\"1.0\" encoding=\"utf-16\"?><ClassToSerialize xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"><Name>Maryam</Name><Age>15</Age><Gender>Female</Gender></ClassToSerialize>")]
+        [InlineData("ali", 15, Gender.None, "<?xml version=\"1.0\" encoding=\"utf-16\"?><ClassToSerialize xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"><Name>ali</Name><Age>15</Age><Gender>None</Gender></ClassToSerialize>")]
+#endif
         [Theory]
-        public override async Task Serilize(string name, int age, Gender gender, string expected)
+        public override async Task Serialize(string name, int age, Gender gender, string expected)
         {
-            await base.Serilize(name, age, gender, expected);
+            await base.Serialize(name, age, gender, expected);
         }
+
         [InlineData("<?xml version=\"1.0\" encoding=\"utf-16\"?><ClassToSerialize><Name>Mahdi</Name><Age>30</Age><Gender>Male</Gender></ClassToSerialize>", "Mahdi", 30, Gender.Male)]
         [InlineData("<?xml version=\"1.0\" encoding=\"utf-16\"?><ClassToSerialize xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\"><Name>Maryam</Name><Age>15</Age><Gender>Female</Gender></ClassToSerialize>", "Maryam", 15, Gender.Female)]
         [InlineData("<?xml version=\"1.0\" encoding=\"utf-16\"?><ClassToSerialize xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\"><Name>ali</Name><Age>15</Age><Gender>None</Gender></ClassToSerialize>", "ali", 15, Gender.None)]
         [Theory]
-        public override async Task Deserilize(string xml, string name, int age, Gender gender)
+        public override async Task Deserialize(string xml, string name, int age, Gender gender)
         {
-            await base.Deserilize(xml, name, age, gender);
+            await base.Deserialize(xml, name, age, gender);
         }
     }
 }

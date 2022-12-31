@@ -28,7 +28,7 @@ namespace EasyMicroservices.Serialization.Tests.Providers.BinarySerialization
         /// <param name="age"></param>
         /// <param name="gender"></param>
         /// <param name="expectedLength"></param>
-        public virtual void Serilize(string name, int age, Gender gender, int expectedLength)
+        public virtual void Serialize(string name, int age, Gender gender, int expectedLength)
         {
             var request = new ClassToSerialize()
             {

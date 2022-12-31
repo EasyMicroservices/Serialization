@@ -1,4 +1,4 @@
-﻿#if (!NET45)
+﻿#if (!NET452)
 
 using System.Threading.Tasks;
 using EasyMicroservices.Serialization.System.Text.Json.Providers;
@@ -16,17 +16,17 @@ namespace EasyMicroservices.Serialization.Tests.Providers.TextSerialization
         [InlineData("Mahdi", 30, Gender.Male, "{\"Name\":\"Mahdi\",\"Age\":30,\"Gender\":1}")]
         [InlineData("Maryam", 15, Gender.Female, "{\"Name\":\"Maryam\",\"Age\":15,\"Gender\":2}")]
         [InlineData("ali", 15, Gender.None, "{\"Name\":\"ali\",\"Age\":15,\"Gender\":0}")]
-        public override async Task Serilize(string name, int age, Gender gender, string expected)
+        public override async Task Serialize(string name, int age, Gender gender, string expected)
         {
-            await base.Serilize(name, age, gender, expected);
+            await base.Serialize(name, age, gender, expected);
         }
         [InlineData("{\"Name\":\"Mahdi\",\"Age\":30,\"Gender\":1}", "Mahdi", 30, Gender.Male)]
         [InlineData("{\"Name\":\"Maryam\",\"Age\":15,\"Gender\":2}", "Maryam", 15, Gender.Female)]
         [InlineData("{\"Name\":\"ali\",\"Age\":15,\"Gender\":0}", "ali", 15, Gender.None)]
         [Theory]
-        public override async Task Deserilize(string json, string name, int age, Gender gender)
+        public override async Task Deserialize(string json, string name, int age, Gender gender)
         {
-            await base.Deserilize(json, name, age, gender);
+            await base.Deserialize(json, name, age, gender);
         }
     }
 }

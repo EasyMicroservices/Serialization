@@ -1,36 +1,31 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-	  <TargetFrameworks>netcoreapp3.1;net6.0;net5.0;</TargetFrameworks>
+	  <TargetFrameworks>netcoreapp3.1;net6.0;net48;net452;net7.0</TargetFrameworks>
 	  <IsPackable>false</IsPackable>
 	  <LangVersion>latest</LangVersion>
+    <Frameworks>|net452|</Frameworks>
+    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
   </PropertyGroup>
 
-	<ItemGroup>
-		<PackageReference Include="coverlet.msbuild" Version="3.2.0">
-			<PrivateAssets>all</PrivateAssets>
-			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-		</PackageReference>
-		<PackageReference Include="coverlet.collector" Version="3.2.0">
-			<PrivateAssets>all</PrivateAssets>
-			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-		</PackageReference>
-		<PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.4.0" />
-		<PackageReference Include="ReportGenerator" Version="5.1.12" />
-		<PackageReference Include="xunit" Version="2.4.2" />
-		<PackageReference Include="xunit.runner.visualstudio" Version="2.4.5">
-			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-			<PrivateAssets>all</PrivateAssets>
-		</PackageReference>
-	</ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="EasyMicroservices.Tests" Version="0.0.0.2" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.4.0">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+  </ItemGroup>
 
-	<ItemGroup>
-	  <ProjectReference Include="..\EasyMicroservices.Serialization.BinaryGo\EasyMicroservices.Serialization.BinaryGo.csproj" />
-	  <ProjectReference Include="..\EasyMicroservices.Serialization.NewtonSoft.Json\EasyMicroservices.Serialization.Newtonsoft.Json.csproj" />
-	  <ProjectReference Include="..\EasyMicroservices.Serialization.System.Text.Json\EasyMicroservices.Serialization.System.Text.Json.csproj" />
-	  <ProjectReference Include="..\EasyMicroservices.Serialization.System.Text.Xml\EasyMicroservices.Serialization.System.Text.Xml.csproj" />
-	  <ProjectReference Include="..\EasyMicroservices.Serialization.YamlDotNet\EasyMicroservices.Serialization.YamlDotNet.csproj" />
+  <ItemGroup>
+    <ProjectReference Include="..\EasyMicroservices.Serialization.BinaryGo\EasyMicroservices.Serialization.BinaryGo.csproj" />
+    <ProjectReference Include="..\EasyMicroservices.Serialization.NewtonSoft.Json\EasyMicroservices.Serialization.Newtonsoft.Json.csproj" />
+    <ProjectReference Include="..\EasyMicroservices.Serialization.System.Text.Xml\EasyMicroservices.Serialization.System.Text.Xml.csproj" />
+    <ProjectReference Include="..\EasyMicroservices.Serialization.YamlDotNet\EasyMicroservices.Serialization.YamlDotNet.csproj" />
 	  <ProjectReference Include="..\EasyMicroservices.Serialization\EasyMicroservices.Serialization.csproj" />
 	</ItemGroup>
-
+  
+  <ItemGroup Condition="'$(TargetFramework)' != 'net452'">
+    <ProjectReference Include="..\EasyMicroservices.Serialization.System.Text.Json\EasyMicroservices.Serialization.System.Text.Json.csproj" />
+	</ItemGroup>
+  
 </Project>

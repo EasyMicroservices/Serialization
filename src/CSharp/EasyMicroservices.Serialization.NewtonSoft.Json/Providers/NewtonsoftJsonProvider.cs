@@ -8,7 +8,7 @@ namespace EasyMicroservices.Serialization.Newtonsoft.Json.Providers
     /// <summary>
     /// use NewtonsoftJson package as text serialization provider 
     /// </summary>
-    public class NewtonsoftJsonProvider : BaseTextSerializationProvider
+    public class NewtonsoftJsonProvider : TextSerializationBaseProvider
     {
         /// <summary>
         /// Deserialize from string

@@ -8,7 +8,7 @@ namespace EasyMicroservices.Serialization.System.Text.Xml.Providers
     /// <summary>
     ///  use mocrosoft SystemTextJson package as text serialization provider 
     /// </summary>
-    public class SystemTextXmlProvider : BaseTextSerializationProvider
+    public class SystemTextXmlProvider : TextSerializationBaseProvider
     {
         /// <summary>
         /// Deserialize from string        /// </summary>

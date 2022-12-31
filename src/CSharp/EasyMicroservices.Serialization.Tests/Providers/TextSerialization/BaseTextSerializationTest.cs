@@ -30,7 +30,7 @@ namespace EasyMicroservices.Serialization.Tests.Providers.TextSerialization
         /// <param name="gender"></param>
         /// <param name="expected"></param>
         /// <returns></returns>
-        public virtual async Task Serilize(string name, int age, Gender gender, string expected)
+        public virtual async Task Serialize(string name, int age, Gender gender, string expected)
         {
             var request = new ClassToSerialize()
             {
@@ -51,7 +51,7 @@ namespace EasyMicroservices.Serialization.Tests.Providers.TextSerialization
         /// <param name="age"></param>
         /// <param name="gender"></param>
         /// <returns></returns>
-        public virtual async Task Deserilize(string json, string name, int age, Gender gender)
+        public virtual async Task Deserialize(string json, string name, int age, Gender gender)
         {
             var result = _provider.Deserialize<ClassToSerialize>(json);
 
