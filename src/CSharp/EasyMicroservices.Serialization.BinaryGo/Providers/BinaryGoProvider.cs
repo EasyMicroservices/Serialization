@@ -8,7 +8,7 @@ namespace EasyMicroservices.Serialization.BinaryGo.Providers
     /// <summary>
     /// use binary go package as binary serialization provider 
     /// </summary>
-    public class BinaryGoProvider : BaseBinarySerializationProvider
+    public class BinaryGoProvider : BinarySerializationBaseProvider
     {
         /// <summary>
         /// Deserialize from byte

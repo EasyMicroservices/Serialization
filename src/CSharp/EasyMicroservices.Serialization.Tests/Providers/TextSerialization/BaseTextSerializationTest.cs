@@ -1,4 +1,7 @@
-﻿using System.Threading.Tasks;
+﻿// Licensed to the .NET Foundation under one or more agreements.
+// The .NET Foundation licenses this file to you under the MIT license.
+
+using System.Threading.Tasks;
 using EasyMicroservices.Serialization.Interfaces;
 using EasyMicroservices.Serialization.Tests.Providers.Models;
 using Xunit;
@@ -30,7 +33,7 @@ namespace EasyMicroservices.Serialization.Tests.Providers.TextSerialization
         /// <param name="gender"></param>
         /// <param name="expected"></param>
         /// <returns></returns>
-        public virtual async Task Serilize(string name, int age, Gender gender, string expected)
+        public virtual Task Serialize(string name, int age, Gender gender, string expected)
         {
             var request = new ClassToSerialize()
             {
@@ -41,7 +44,7 @@ namespace EasyMicroservices.Serialization.Tests.Providers.TextSerialization
             var result = _provider.Serialize(request);
 
             Assert.Equal(expected, result);
-            await Task.CompletedTask;
+            return TaskHelper.GetCompletedTask();
         }
 
         /// <summary>
@@ -52,12 +55,12 @@ namespace EasyMicroservices.Serialization.Tests.Providers.TextSerialization
         /// <param name="age"></param>
         /// <param name="gender"></param>
         /// <returns></returns>
-        public virtual async Task Deserilize(string json, string name, int age, Gender gender)
+        public virtual Task Deserialize(string json, string name, int age, Gender gender)
         {
             var result = _provider.Deserialize<ClassToSerialize>(json);
 
             Assert.True(result.Name == name && result.Age == age && result.Gender == gender);
-            await Task.CompletedTask;
+            return TaskHelper.GetCompletedTask();
         }
 
     }

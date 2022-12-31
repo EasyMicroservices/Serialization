@@ -1,23 +1,24 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
-		<TargetFrameworks>netstandard2.0;netstandard2.1;net6.0;net45</TargetFrameworks>
-		<Platforms>AnyCPU;x64;x86</Platforms>
+    <TargetFrameworks>netstandard2.0;netstandard2.1;netcoreapp3.1;net6.0;net7.0;net48</TargetFrameworks>
+    <Platforms>AnyCPU;x64;x86</Platforms>
 		<Authors>EasyMicroservices</Authors>
 		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
 		<Version>0.0.0.1</Version>
-		<Description>Serilize and deserilize wrapper</Description>
+		<Description>Serialize and deserialize wrapper</Description>
 		<Copyright>EasyMicroservice@gmail.com</Copyright>
-		<PackageTags>Serilize,deserilize</PackageTags>
+		<PackageTags>Serialize,deserialize</PackageTags>
 		<PackageProjectUrl>https://github.com/EasyMicroservices/Serialization</PackageProjectUrl>
 		<LangVersion>latest</LangVersion>
 		<TreatWarningsAsErrors>true</TreatWarningsAsErrors>
 		<DocumentationFile>.\bin\$(Configuration)\$(TargetFramework)\EasyMicroservice.Serialization.System.Text.json.xml</DocumentationFile>
 	</PropertyGroup>
+
+	<ItemGroup>
+	  <PackageReference Include="System.Text.Json" Version="7.0.1" />
+	</ItemGroup>
 	<ItemGroup>
 		<ProjectReference Include="..\EasyMicroservices.Serialization\EasyMicroservices.Serialization.csproj" />
 	</ItemGroup>
- <ItemGroup>  
-    <PackageReference Include="System.Memory" Version="4.5.5" />
-  </ItemGroup>
 </Project>

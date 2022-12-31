@@ -7,7 +7,7 @@ namespace EasyMicroservices.Serialization.MessagePack.Providers
     /// <summary>
     /// use MessagePack package as binary serialization provider 
     /// </summary>
-    public class MessagePackProvider : BaseBinarySerializationProvider
+    public class MessagePackProvider : BinarySerializationBaseProvider
     {
         /// <summary>
         /// Deserialize from byte

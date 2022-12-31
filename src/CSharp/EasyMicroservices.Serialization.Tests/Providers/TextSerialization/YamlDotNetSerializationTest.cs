@@ -25,13 +25,13 @@ namespace EasyMicroservices.Serialization.Tests.Providers.TextSerialization
         /// <param name="expected"></param>
         /// <returns></returns>
         [Theory]
-        [ClassData(typeof(YamlDotNetSerilizeDataTest))]
-        public override async Task Serilize(string name, int age, Gender gender, string expected)
+        [ClassData(typeof(YamlDotNetSerializeDataTest))]
+        public override Task Serialize(string name, int age, Gender gender, string expected)
         {
-            await base.Serilize(name, age, gender, expected);
+            return base.Serialize(name, age, gender, expected);
         }
         /// <summary>
-        /// yml support json format for deserilizing
+        /// yml support json format for deserialization
         /// </summary>
         /// <param name="json"></param>
         /// <param name="name"></param>
@@ -39,16 +39,16 @@ namespace EasyMicroservices.Serialization.Tests.Providers.TextSerialization
         /// <param name="gender"></param>
         /// <returns></returns>  
         [Theory]
-        [ClassData(typeof(YamlDotNetDeSerilizeDataTest))]
-        public override async Task Deserilize(string json, string name, int age, Gender gender)
+        [ClassData(typeof(YamlDotNetDeserializeDataTest))]
+        public override Task Deserialize(string json, string name, int age, Gender gender)
         {
-            await base.Deserilize(json, name, age, gender);
+            return base.Deserialize(json, name, age, gender);
         }
     }
     /// <summary>
-    /// data for test Serilize in yml
+    /// data for test Serialize in yml
     /// </summary>
-    public class YamlDotNetSerilizeDataTest : IEnumerable<object[]>
+    public class YamlDotNetSerializeDataTest : IEnumerable<object[]>
     {
 
         public IEnumerator<object[]> GetEnumerator()
@@ -61,9 +61,9 @@ namespace EasyMicroservices.Serialization.Tests.Providers.TextSerialization
         IEnumerator IEnumerable.GetEnumerator() => GetEnumerator();
     }
     /// <summary>
-    /// data for test DeSerilize in yml
+    /// data for test Deserialize in yml
     /// </summary>
-    public class YamlDotNetDeSerilizeDataTest : IEnumerable<object[]>
+    public class YamlDotNetDeserializeDataTest : IEnumerable<object[]>
     {
 
         public IEnumerator<object[]> GetEnumerator()

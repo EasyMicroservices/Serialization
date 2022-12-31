@@ -1,5 +1,4 @@
-﻿#if (!NET45)
-using System;
+﻿using System;
 using System.Text.Json;
 using EasyMicroservices.Serialization.Providers;
 
@@ -9,7 +8,7 @@ namespace EasyMicroservices.Serialization.System.Text.Json.Providers
     ///  use mocrosoft SystemTextJson package as binary serialization provider 
     /// </summary>
 
-    public class SystemTextJsonBinaryProvider : BaseBinarySerializationProvider
+    public class SystemTextJsonBinaryProvider : BinarySerializationBaseProvider
     {
         /// <summary>
         ///  Deserialize from byte
@@ -34,4 +33,3 @@ namespace EasyMicroservices.Serialization.System.Text.Json.Providers
         }
     }
 }
-#endif

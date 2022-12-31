@@ -1,5 +1,4 @@
-﻿#if(!NET45)
-using System;
+﻿using System;
 using EasyMicroservices.Serialization.Providers;
 using YamlDotNet.Serialization;
 using YamlDotNet.Serialization.NamingConventions;
@@ -9,7 +8,7 @@ namespace EasyMicroservices.Serialization.YamlDotNet.Providers
     /// <summary>
     ///  use YamlDotNet as text serialization provider 
     /// </summary>
-    public class YamlDotNetProvider : BaseTextSerializationProvider
+    public class YamlDotNetProvider : TextSerializationBaseProvider
     {
         /// <summary>
         /// Deserialize from string
@@ -42,4 +41,3 @@ namespace EasyMicroservices.Serialization.YamlDotNet.Providers
         }
     }
 }
-#endif

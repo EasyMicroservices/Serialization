@@ -1,40 +1,21 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
-		<TargetFrameworks>netstandard2.0;netstandard2.1;net6.0;net45</TargetFrameworks>
+		<TargetFrameworks>netstandard2.0;netstandard2.1;net6.0;net45;net7.0</TargetFrameworks>
 		<Platforms>AnyCPU;x64;x86</Platforms>
 		<Authors>EasyMicroservices</Authors>
-		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
 		<Version>0.0.0.1</Version>
-		<Description>Serilize and deserilize wrapper</Description>
+		<Description>Serialize and deserialize wrapper</Description>
 		<Copyright>EasyMicroservices@gmail.com</Copyright>
-		<PackageTags>Serilize,deserilize</PackageTags>
+		<PackageTags>Serialize,deserialize</PackageTags>
 		<PackageProjectUrl>https://github.com/EasyMicroservices/Serialization</PackageProjectUrl>
 		<LangVersion>latest</LangVersion>
 		<TreatWarningsAsErrors>true</TreatWarningsAsErrors>
 		<DocumentationFile>.\bin\$(Configuration)\$(TargetFramework)\EasyMicroservice.Serialization.xml</DocumentationFile>
 	</PropertyGroup>
 
-  <ItemGroup>  
-    <PackageReference Include="System.Memory" Version="4.5.5" />
-  </ItemGroup>
-
-  <ItemGroup Condition="'$(TargetFramework)' == 'netstandard2.0'">
-    <PackageReference Include="System.Text.Json">
-      <Version>7.0.1</Version>
-    </PackageReference>
-  </ItemGroup>
-
-  <ItemGroup Condition="'$(TargetFramework)' == 'netstandard2.1'">
-    <PackageReference Include="System.Text.Json">
-      <Version>7.0.1</Version>
-    </PackageReference>
-  </ItemGroup>
-
-  <ItemGroup Condition="'$(TargetFramework)' == 'net6.0'">
-    <PackageReference Include="System.Text.Json">
-      <Version>7.0.1</Version>
-    </PackageReference>
-  </ItemGroup>
+	<ItemGroup>
+	  <PackageReference Include="System.Memory" Version="4.5.5" />
+	</ItemGroup>
 
 </Project>

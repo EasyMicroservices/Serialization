@@ -8,14 +8,13 @@ namespace EasyMicroservices.Serialization.System.Text.Xml.Providers
     /// <summary>
     ///  use mocrosoft SystemTextJson package as text serialization provider 
     /// </summary>
-    public class SystemTextXmlProvider : BaseTextSerializationProvider
+    public class SystemTextXmlProvider : TextSerializationBaseProvider
     {
         /// <summary>
         /// Deserialize from string        /// </summary>
         /// <typeparam name="T"></typeparam>
         /// <param name="value"></param>
         /// <returns></returns>
-        /// <exception cref="NotImplementedException"></exception>
         public override T Deserialize<T>(string value)
         {
             var xmlSerializer = new XmlSerializer(typeof(T));
@@ -26,7 +25,6 @@ namespace EasyMicroservices.Serialization.System.Text.Xml.Providers
         /// </summary>
         /// <param name="value"></param>
         /// <returns></returns>
-        /// <exception cref="NotImplementedException"></exception>
         public override string Serialize(object value)
         {
             XmlSerializer xsSubmit = new XmlSerializer(value.GetType());
