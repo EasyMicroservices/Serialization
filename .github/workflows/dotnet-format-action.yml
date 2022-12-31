@@ -16,6 +16,7 @@ jobs:
             3.1.x
             5.0.x
             6.0.x
+            7.0.x
       - name: Run dotnet format
         id: format
         uses: jfversluis/dotnet-format@v1.0.5
