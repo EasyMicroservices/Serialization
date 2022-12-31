@@ -41,6 +41,7 @@ namespace EasyMicroservices.Serialization.Tests.Providers.TextSerialization
             var result = _provider.Serialize(request);
 
             Assert.Equal(expected, result);
+            await Task.CompletedTask;
         }
 
         /// <summary>
@@ -56,6 +57,7 @@ namespace EasyMicroservices.Serialization.Tests.Providers.TextSerialization
             var result = _provider.Deserialize<ClassToSerialize>(json);
 
             Assert.True(result.Name == name && result.Age == age && result.Gender == gender);
+            await Task.CompletedTask;
         }
 
     }

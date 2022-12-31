@@ -28,8 +28,9 @@ namespace EasyMicroservices.Serialization.Tests.Providers.BinarySerialization
         /// <param name="age"></param>
         /// <param name="gender"></param>
         /// <param name="expectedLength"></param>
-        public virtual void Serilize(string name, int age, Gender gender, int expectedLength)
+        public virtual void Serialize(string name, int age, Gender gender)
         {
+            //Arrange
             var request = new ClassToSerialize()
             {
                 Name = name,
@@ -37,14 +38,17 @@ namespace EasyMicroservices.Serialization.Tests.Providers.BinarySerialization
                 Gender = gender
             };
 
+            //Act
             var result = _provider.Serialize(request);
 
+            //Assert
             Assert.NotEqual(0, result.Length);
-            Assert.Equal(expectedLength, result.Length);
 
             var deserializedBytes = _provider.Deserialize<ClassToSerialize>(result);
 
-            Assert.True(request.Age == deserializedBytes.Age && request.Name == deserializedBytes.Name && request.Gender == deserializedBytes.Gender);
+            Assert.Equal(request.Age, deserializedBytes.Age);
+            Assert.Equal(request.Name, deserializedBytes.Name);
+            Assert.Equal(request.Gender, deserializedBytes.Gender);
 
         }
 
@@ -54,11 +58,14 @@ namespace EasyMicroservices.Serialization.Tests.Providers.BinarySerialization
         /// <param name="arrayLength"></param>
         public virtual void DeserializeSimpleByteArray(int arrayLength)
         {
+            //Arange
             var sourceBytes = Enumerable.Range(0, arrayLength).Select(i => unchecked((byte)i)).ToArray(); // long byte array
-
             var request = _provider.Serialize(sourceBytes);
 
+            //Act
             var deserializedBytes = _provider.Deserialize<byte[]>(request);
+
+            //Assert
             Assert.NotNull(deserializedBytes);
             Assert.Equal(sourceBytes.Length, deserializedBytes.Length);
             Assert.Equal(sourceBytes, deserializedBytes);
