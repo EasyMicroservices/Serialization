@@ -15,6 +15,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EasyMicroservices.Serializa
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EasyMicroservices.Serialization.YamlDotNet", "EasyMicroservices.Serialization.YamlDotNet\EasyMicroservices.Serialization.YamlDotNet.csproj", "{36C17046-6AE8-44A0-8283-63E392183A61}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EasyMicroservices.Serialization.MessagePack", "EasyMicroservices.Serialization.MessagePack\EasyMicroservices.Serialization.MessagePack.csproj", "{75632461-F3EC-4737-87EC-287CF0B09DD1}"
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EasyMicroservices.Serialization.System.Text.Xml", "EasyMicroservices.Serialization.System.Text.Xml\EasyMicroservices.Serialization.System.Text.Xml.csproj", "{1BB18979-2455-46BF-98BE-6BD96E93C666}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EasyMicroservices.Serialization.MemoryPack", "EasyMicroservices.Serialization.MemoryPack\EasyMicroservices.Serialization.MemoryPack.csproj", "{579B42BC-8F4C-495C-9B53-5A5CBF86EAE3}"
@@ -109,6 +110,18 @@ Global
 		{36C17046-6AE8-44A0-8283-63E392183A61}.Release|x64.Build.0 = Release|x64
 		{36C17046-6AE8-44A0-8283-63E392183A61}.Release|x86.ActiveCfg = Release|x86
 		{36C17046-6AE8-44A0-8283-63E392183A61}.Release|x86.Build.0 = Release|x86
+		{75632461-F3EC-4737-87EC-287CF0B09DD1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{75632461-F3EC-4737-87EC-287CF0B09DD1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{75632461-F3EC-4737-87EC-287CF0B09DD1}.Debug|x64.ActiveCfg = Debug|x64
+		{75632461-F3EC-4737-87EC-287CF0B09DD1}.Debug|x64.Build.0 = Debug|x64
+		{75632461-F3EC-4737-87EC-287CF0B09DD1}.Debug|x86.ActiveCfg = Debug|x86
+		{75632461-F3EC-4737-87EC-287CF0B09DD1}.Debug|x86.Build.0 = Debug|x86
+		{75632461-F3EC-4737-87EC-287CF0B09DD1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{75632461-F3EC-4737-87EC-287CF0B09DD1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{75632461-F3EC-4737-87EC-287CF0B09DD1}.Release|x64.ActiveCfg = Release|x64
+		{75632461-F3EC-4737-87EC-287CF0B09DD1}.Release|x64.Build.0 = Release|x64
+		{75632461-F3EC-4737-87EC-287CF0B09DD1}.Release|x86.ActiveCfg = Release|x86
+		{75632461-F3EC-4737-87EC-287CF0B09DD1}.Release|x86.Build.0 = Release|x86
 		{1BB18979-2455-46BF-98BE-6BD96E93C666}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{1BB18979-2455-46BF-98BE-6BD96E93C666}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1BB18979-2455-46BF-98BE-6BD96E93C666}.Debug|x64.ActiveCfg = Debug|x64
