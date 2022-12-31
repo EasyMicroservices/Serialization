@@ -28,6 +28,7 @@
 	  <ProjectReference Include="..\EasyMicroservices.Serialization.BinaryGo\EasyMicroservices.Serialization.BinaryGo.csproj" />
 	  <ProjectReference Include="..\EasyMicroservices.Serialization.NewtonSoft.Json\EasyMicroservices.Serialization.Newtonsoft.Json.csproj" />
 	  <ProjectReference Include="..\EasyMicroservices.Serialization.System.Text.Json\EasyMicroservices.Serialization.System.Text.Json.csproj" />
+	  <ProjectReference Include="..\EasyMicroservices.Serialization.System.Text.Xml\EasyMicroservices.Serialization.System.Text.Xml.csproj" />
 	  <ProjectReference Include="..\EasyMicroservices.Serialization.YamlDotNet\EasyMicroservices.Serialization.YamlDotNet.csproj" />
 	  <ProjectReference Include="..\EasyMicroservices.Serialization\EasyMicroservices.Serialization.csproj" />
 	</ItemGroup>
