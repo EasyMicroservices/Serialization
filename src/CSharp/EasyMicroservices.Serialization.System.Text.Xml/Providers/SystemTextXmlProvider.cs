@@ -1,7 +1,7 @@
-﻿using EasyMicroservices.Serialization.Providers;
-using System.IO;
-using System.Xml.Serialization;
+﻿using System.IO;
 using System.Xml;
+using System.Xml.Serialization;
+using EasyMicroservices.Serialization.Providers;
 
 namespace EasyMicroservices.Serialization.System.Text.Xml.Providers
 {
