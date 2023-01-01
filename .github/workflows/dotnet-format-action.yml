@@ -26,6 +26,18 @@ jobs:
           workspace: "./src/CSharp/EasyMicroservices.Serialization.sln"
       - name: Test
         run: dotnet test ./src/CSharp/EasyMicroservices.Serialization.sln
+      - name:  Test to generate Code Coverage Report
+        run: |
+          dotnet build ./src/CSharp/EasyMicroservices.Serialization.sln
+          dotnet test ./src/CSharp/EasyMicroservices.Serialization.sln --verbosity normal --collect:"XPlat Code Coverage" --settings ./src/CSharp/EasyMicroservices.Serialization.Tests/coverlet.runsettings -f net6.0
+          mv -v ./src/CSharp/EasyMicroservices.Serialization.Tests/TestResults/*/*.* ./src/CSharp/EasyMicroservices.Serialization.Tests/TestResults/
+      - name: OpenCover Badge Generator
+        uses: danpetitt/open-cover-badge-generator-action@v1.0.9
+        with:
+          path-to-opencover-xml: ./src/CSharp/EasyMicroservices.Serialization.Tests/TestResults/coverage.opencover.xml
+          path-to-badges: ./src/CSharp
+          minimum-coverage: 50
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
       - name: Commit files
         if: steps.format.outputs.has-changes == 'true'
         uses: EndBug/add-and-commit@v4.1.0
