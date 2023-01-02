@@ -27,14 +27,15 @@ jobs:
       - name: Test
         run: dotnet test ./src/CSharp/EasyMicroservices.Serialization.sln
       - name:  Test to generate Code Coverage Report
+        working-directory: ./src/CSharp
         run: |
-          dotnet build ./src/CSharp/EasyMicroservices.Serialization.sln
-          dotnet test ./src/CSharp/EasyMicroservices.Serialization.sln --verbosity normal --collect:"XPlat Code Coverage" --settings ./src/CSharp/EasyMicroservices.Serialization.Tests/coverlet.runsettings -f net6.0
-          mv -v ./src/CSharp/EasyMicroservices.Serialization.Tests/TestResults/*/*.* ./src/CSharp/EasyMicroservices.Serialization.Tests/TestResults/
+          dotnet build ./EasyMicroservices.Serialization.sln
+          dotnet tool install --global coverlet.console
+          coverlet EasyMicroservices.Serialization.Tests/bin/Debug/net6.0/EasyMicroservices.Serialization.Tests.dll --target "dotnet" --targetargs "test EasyMicroservices.Serialization.Tests/bin/Debug/net6.0/EasyMicroservices.Serialization.Tests.dll --no-build" -f opencover
       - name: OpenCover Badge Generator
         uses: danpetitt/open-cover-badge-generator-action@v1.0.9
         with:
-          path-to-opencover-xml: ./src/CSharp/EasyMicroservices.Serialization.Tests/TestResults/coverage.opencover.xml
+          path-to-opencover-xml: ./src/CSharp/coverage.opencover.xml
           path-to-badges: ./src/CSharp
           minimum-coverage: 50
           repo-token: ${{ secrets.GITHUB_TOKEN }}
