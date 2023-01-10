@@ -9,7 +9,7 @@
     }
   },
   "profiles": {
-    "WebAPISampleProject": {
+    "WebAPISampleProject.BinaryGo": {
       "commandName": "Project",
       "dotnetRunMessages": true,
       "launchBrowser": true,
