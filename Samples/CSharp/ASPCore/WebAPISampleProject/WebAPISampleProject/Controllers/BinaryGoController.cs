@@ -1,7 +1,7 @@
 // Licensed to the .NET Foundation under one or more agreements.
 // The .NET Foundation licenses this file to you under the MIT license.
 
-using EasyMicroservices.Serialization.BinaryGo.Providers;
+using EasyMicroservices.Serialization.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 using WebAPISampleProject.Models;
 
@@ -11,29 +11,26 @@ namespace WebAPISampleProject.Controllers;
 [ApiController]
 public class BinaryGoController : ControllerBase
 {
+    readonly IBinarySerialization _binarySerialization;
+    public BinaryGoController(IBinarySerialization binarySerialization)
+    {
+        _binarySerialization = binarySerialization;
+    }
 
     [Route("Serialize")]
     [HttpGet]
-    public IActionResult Serialize_MessagePack()
+    public IActionResult Serialize_BinaryGo()
     {
         User model = new User() { Age = 51, FirstName = "Elon", LastName = "Musk" };
-
-        BinaryGoProvider p = new BinaryGoProvider();
-        ReadOnlySpan<byte> result = p.Serialize(model);
-
-
-        //  var resultInterface= _binarySerialization.Serialize(model);
-
+        var result = _binarySerialization.Serialize(model);
         return Ok(result.ToArray());
     }
 
     [Route("Deserialize")]
     [HttpPost]
-    public IActionResult Deserialize_MessagePack( byte[] input)
+    public IActionResult Deserialize_BinaryGo(byte[] input)
     {
-        BinaryGoProvider p = new BinaryGoProvider();
-        var result = p.Deserialize<User>(input); // _binarySerialization.Deserialize<User>(input);
+        var result = _binarySerialization.Deserialize<User>(input);
         return Ok(result);
     }
-
 }
