@@ -25,7 +25,7 @@ namespace WebAPISampleProject.MessagePack.Controllers;
         [HttpGet]
         public IActionResult Serialize()
         {
-            User model = new User() { Age = 51, FirstName = "Elon", LastName = "Musk" };
+            Customer model = new Customer() { Age = 51, FirstName = "Elon", LastName = "Musk" };
             var result= _binarySerialization.Serialize(model);
             return Ok(result.ToArray());
         }
@@ -34,7 +34,7 @@ namespace WebAPISampleProject.MessagePack.Controllers;
         [HttpPost]
         public IActionResult Deserialize( byte[] input)
         {
-            var result = _binarySerialization.Deserialize<User>(input);
+            var result = _binarySerialization.Deserialize<Customer>(input);
             return Ok(result);
         }
 

@@ -6,7 +6,7 @@ using MessagePack;
 namespace Common.Models;
 
 [MessagePackObject]
-public class User
+public class Customer
 {
     [Key(0)]
     public string FirstName { get; set; }
@@ -14,4 +14,13 @@ public class User
     public string LastName { get; set; }
     [Key(2)]
     public int Age { get; set; }
+
+    public Address Address { get; set; }
+}
+
+public class Address
+{
+    public string street { get; set; }
+    public string city { get; set; }
+    public string state { get; set; }
 }
