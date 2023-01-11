@@ -1,3 +1,4 @@
 # Serialization
 Wrapper for any Serialize package
-test checks
+
+[![Line Coverage Status](./src/CSharp/coverage-badge-line.svg)](https://github.com/danpetitt/open-cover-badge-generator-action/)
