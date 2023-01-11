@@ -13,7 +13,5 @@ namespace EasyMicroservices.Serialization.Interfaces
         /// <param name="objectType"></param>
         /// <returns></returns>
         bool CanConvert(Type objectType);
-
     }
-
 }
