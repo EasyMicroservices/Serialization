@@ -8,8 +8,11 @@
 
     <ItemGroup>
         <PackageReference Include="EasyMicroservices.Serialization.BinaryGo" Version="0.0.0.1" />
-        <PackageReference Include="EasyMicroservices.Serialization.MessagePack" Version="0.0.0.1" />
         <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Common\Common.csproj" />
     </ItemGroup>
 
 </Project>

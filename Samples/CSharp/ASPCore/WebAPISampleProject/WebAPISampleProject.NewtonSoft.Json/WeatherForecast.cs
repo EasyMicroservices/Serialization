@@ -1,4 +1,4 @@
-namespace WebAPISampleProject;
+namespace WebAPISampleProject.NewtonSoft.Json;
 
 public class WeatherForecast
 {
