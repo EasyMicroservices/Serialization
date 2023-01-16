@@ -19,6 +19,7 @@ namespace WebAPISampleProject.System.Text.Json.Controllers
             _textSerialization = textSerialization;
         }
 
+
         [Route("Serialize")]
         [HttpGet]
         public IActionResult Serialize()
