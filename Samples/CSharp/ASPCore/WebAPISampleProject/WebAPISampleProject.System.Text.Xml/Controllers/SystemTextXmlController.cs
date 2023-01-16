@@ -1,15 +1,36 @@
 // Licensed to the .NET Foundation under one or more agreements.
 // The .NET Foundation licenses this file to you under the MIT license.
 
+using Common.Models;
+using EasyMicroservices.Serialization.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 
 namespace WebAPISampleProject.System.Text.Xml.Controllers;
 
-public class SystemTextXmlController : Controller
+[Route("api/[controller]")]
+[ApiController]
+public class SystemTextXmlController : ControllerBase
 {
-    // GET
-    public IActionResult Index()
+    private readonly ITextSerialization _textSerialization;
+
+    public SystemTextXmlController(ITextSerialization textSerialization)
     {
-        return View();
+        _textSerialization = textSerialization;
+    }
+    [Route("Serialize")]
+    [HttpGet]
+    public IActionResult Serialize()
+    {
+        Customer model = new Customer() { Age = 51, FirstName = "Elon", LastName = "Musk" };
+        var result = _textSerialization.Serialize(model);
+        return Ok(result);
+    }
+
+    [Route("Deserialize")]
+    [HttpPost]
+    public IActionResult Deserialize(string input)
+    {
+        var result = _textSerialization.Deserialize<Customer>(input);
+        return Ok(result);
     }
 }
