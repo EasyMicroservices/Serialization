@@ -10,7 +10,7 @@
         /// </summary>
         /// <param name="value"></param>
         /// <returns></returns>
-        string Serialize(object value);
+        string Serialize<T>(T value);
         /// <summary>
         /// Deserialize from string
         /// </summary>

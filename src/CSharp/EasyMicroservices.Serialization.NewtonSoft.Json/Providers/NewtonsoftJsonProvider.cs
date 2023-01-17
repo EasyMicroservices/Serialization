@@ -26,7 +26,7 @@ namespace EasyMicroservices.Serialization.Newtonsoft.Json.Providers
         /// <param name="value"></param>
         /// <returns></returns>
         /// <exception cref="NotImplementedException"></exception>
-        public override string Serialize(object value)
+        public override string Serialize<T>(T value)
         {
             return JsonConvert.SerializeObject(value);
         }

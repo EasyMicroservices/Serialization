@@ -23,6 +23,6 @@ namespace EasyMicroservices.Serialization.Providers
         /// <param name="value"></param>
         /// <returns></returns>
         /// <exception cref="NotImplementedException"></exception>
-        public abstract string Serialize(object value);
+        public abstract string Serialize<T>(T value);
     }
 }

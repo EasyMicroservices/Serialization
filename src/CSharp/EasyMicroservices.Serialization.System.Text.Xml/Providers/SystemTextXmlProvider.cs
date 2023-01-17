@@ -25,7 +25,7 @@ namespace EasyMicroservices.Serialization.System.Text.Xml.Providers
         /// </summary>
         /// <param name="value"></param>
         /// <returns></returns>
-        public override string Serialize(object value)
+        public override string Serialize<T>(T value)
         {
             XmlSerializer xsSubmit = new XmlSerializer(value.GetType());
             using (var sww = new StringWriter())
