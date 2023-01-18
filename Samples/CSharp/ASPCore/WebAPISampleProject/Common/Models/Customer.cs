@@ -2,11 +2,13 @@
 // The .NET Foundation licenses this file to you under the MIT license.
 
 using MessagePack;
+//using MemoryPack;
 
 namespace Common.Models;
 
 [MessagePackObject]
-public class Customer
+//[MemoryPackable]
+public partial class  Customer
 {
     [Key(0)]
     public string FirstName { get; set; }
@@ -18,7 +20,8 @@ public class Customer
     public Address Address { get; set; }
 }
 
-public class Address
+//[MemoryPackable]
+ public partial class Address
 {
     public string street { get; set; }
     public string city { get; set; }
