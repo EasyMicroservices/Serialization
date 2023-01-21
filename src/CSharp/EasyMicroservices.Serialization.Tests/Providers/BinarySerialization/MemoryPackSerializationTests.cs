@@ -1,17 +1,21 @@
-﻿#if (!NET452)
+﻿// Licensed to the .NET Foundation under one or more agreements.
+// The .NET Foundation licenses this file to you under the MIT license.
+
+#if (NET7_0)
 using System;
-using System.Diagnostics.Contracts;
-using EasyMicroservices.Serialization.MessagePack.Providers;
+using EasyMicroservices.Serialization.MemoryPack.Providers;
 using EasyMicroservices.Serialization.Tests.Providers.Models;
-using MessagePack;
+using MemoryPack;
+using MemoryPack.Formatters;
 using Xunit;
 
 namespace EasyMicroservices.Serialization.Tests.Providers.BinarySerialization
 {
-    public class MessagePackSerializationTests : BaseBinarySerializationTest
+    public class MemoryPackSerializationTests : BaseBinarySerializationTest
     {
-        public MessagePackSerializationTests() : base(new MessagePackProvider())
+        public MemoryPackSerializationTests() : base(new MemoryPackProvider())
         {
+            
         }
 
         [Theory]
@@ -34,7 +38,6 @@ namespace EasyMicroservices.Serialization.Tests.Providers.BinarySerialization
 
         [Theory]
         [InlineData(typeof(BadClassWithoutObjectAttribute))]
-        [InlineData(typeof(BadClassWithoutAnyPropertyAttribute))]
         public void Serilize_ClassWithoutAttributeObject_ShouldThrowException(Type badClassType)
         {
             //Arrange
@@ -42,18 +45,13 @@ namespace EasyMicroservices.Serialization.Tests.Providers.BinarySerialization
 
             //Act
             //Assert
-            _provider.Serialize(obj);
-            //with contractless feature it will  not throw exception
-            //Assert.Throws<MessagePackSerializationException>(() => _provider.Serialize(obj));
+
+            Assert.Throws<MemoryPackSerializationException>(() => _provider.Serialize(obj));
         }
 
         public class BadClassWithoutObjectAttribute
         {
-        }
 
-        public class BadClassWithoutAnyPropertyAttribute
-        {
-            public int MyProperty { get; set; }
         }
 
     }

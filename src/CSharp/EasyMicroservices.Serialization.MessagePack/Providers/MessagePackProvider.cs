@@ -1,6 +1,9 @@
 ﻿using System;
+using System.Reflection;
 using EasyMicroservices.Serialization.Providers;
+using EasyMicroservices.Utilities.Reflection.Generation;
 using MessagePack;
+using MessagePack.Resolvers;
 
 namespace EasyMicroservices.Serialization.MessagePack.Providers
 {
@@ -17,7 +20,7 @@ namespace EasyMicroservices.Serialization.MessagePack.Providers
         /// <returns></returns>
         public override T Deserialize<T>(ReadOnlySpan<byte> reader)
         {
-            return MessagePackSerializer.Deserialize<T>(reader.ToArray());
+            return MessagePackSerializer.Deserialize<T>(reader.ToArray(), ContractlessStandardResolver.Options);
         }
 
 
@@ -29,7 +32,7 @@ namespace EasyMicroservices.Serialization.MessagePack.Providers
         /// <returns></returns>
         public override ReadOnlySpan<byte> Serialize<T>(T value)
         {
-            return MessagePackSerializer.Serialize(value);
+            return MessagePackSerializer.Serialize(value, ContractlessStandardResolver.Options);
         }
     }
 }
