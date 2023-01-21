@@ -19,4 +19,8 @@
     <PackageReference Include="System.Memory" Version="4.5.5" />
   </ItemGroup>
 
+  <ItemGroup>
+    <PackageReference Include="EasyMicroservices.Utilities" Version="0.0.0.3" />
+  </ItemGroup>
+
 </Project>
