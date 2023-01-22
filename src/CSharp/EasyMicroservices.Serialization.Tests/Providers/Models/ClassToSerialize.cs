@@ -1,27 +1,15 @@
-﻿#if (!NET452)
-using MessagePack;
+﻿// Licensed to the .NET Foundation under one or more agreements.
+// The .NET Foundation licenses this file to you under the MIT license.
 
 namespace EasyMicroservices.Serialization.Tests.Providers.Models
 {
-    [MessagePackObject]
-    public class ClassToSerialize
-    {
-        [Key(0)]
-        public string Name { get; set; }
-        [Key(1)]
-        public int Age { get; set; }
-        [Key(2)]
-        public Gender Gender { get; set; }
-    }
-}
-#else
-namespace EasyMicroservices.Serialization.Tests.Providers.Models
-{
-    public class ClassToSerialize
-    {
-        public string Name { get; set; }
-        public int Age { get; set; }
-        public Gender Gender { get; set; }
-    }
-}
+#if (NET7_0)
+    [global::MemoryPack.MemoryPackable]
 #endif
+    public partial class ClassToSerialize
+    {
+        public string Name { get; set; }
+        public int Age { get; set; }
+        public Gender Gender { get; set; }
+    }
+}

@@ -25,7 +25,7 @@ namespace EasyMicroservices.Serialization.MemoryPack.Providers
         /// <returns></returns>
         public override T Deserialize<T>(ReadOnlySpan<byte> reader)
         {
-            return MemoryPackSerializer.Deserialize<T>(reader);
+            return (T)MemoryPackSerializer.Deserialize(typeof(T), reader);
         }
         /// <summary>
         /// 
