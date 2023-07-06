@@ -10,6 +10,15 @@ namespace EasyMicroservices.Serialization.System.Text.Json.Providers
 
     public class SystemTextJsonBinaryProvider : BinarySerializationBaseProvider
     {
+        private readonly JsonSerializerOptions _options;
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="options"></param>
+        public SystemTextJsonBinaryProvider(JsonSerializerOptions options)
+        {
+            _options = options;
+        }
         /// <summary>
         ///  Deserialize from byte
         /// </summary>
@@ -19,7 +28,7 @@ namespace EasyMicroservices.Serialization.System.Text.Json.Providers
         /// <exception cref="NotImplementedException"></exception>
         public override T Deserialize<T>(ReadOnlySpan<byte> reader)
         {
-            return JsonSerializer.Deserialize<T>(reader);
+            return JsonSerializer.Deserialize<T>(reader, _options);
         }
         /// <summary>
         /// Serialize to byte
@@ -29,7 +38,7 @@ namespace EasyMicroservices.Serialization.System.Text.Json.Providers
         /// <exception cref="NotImplementedException"></exception>
         public override ReadOnlySpan<byte> Serialize<T>(T value)
         {
-            return JsonSerializer.SerializeToUtf8Bytes(value);
+            return JsonSerializer.SerializeToUtf8Bytes(value, _options);
         }
     }
 }
