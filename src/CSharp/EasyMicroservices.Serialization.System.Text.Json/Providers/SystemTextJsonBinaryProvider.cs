@@ -20,6 +20,13 @@ namespace EasyMicroservices.Serialization.System.Text.Json.Providers
             _options = options;
         }
         /// <summary>
+        /// 
+        /// </summary>
+        public SystemTextJsonBinaryProvider()
+        {
+        }
+
+        /// <summary>
         ///  Deserialize from byte
         /// </summary>
         /// <typeparam name="T"></typeparam>
