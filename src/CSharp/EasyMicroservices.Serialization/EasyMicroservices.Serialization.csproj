@@ -16,7 +16,7 @@
 	<PropertyGroup>
 		<Platforms>AnyCPU;x64;x86</Platforms>
 		<Authors>EasyMicroservices</Authors>
-    <IsPackable>false</IsPackable>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <Version>0.0.0.2</Version>
 		<Description>Serialize and deserialize wrapper</Description>
 		<Copyright>EasyMicroservices@gmail.com</Copyright>
