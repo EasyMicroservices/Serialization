@@ -3,7 +3,7 @@
     /// <summary>
     /// serialize to string and visa versa
     /// </summary>
-    public interface ITextSerialization : IBaseSerialization
+    public interface ITextSerializationProvider : IBaseSerializationProvider
     {
         /// <summary>
         /// Serialize to string

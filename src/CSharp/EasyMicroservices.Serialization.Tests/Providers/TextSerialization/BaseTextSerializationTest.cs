@@ -16,12 +16,12 @@ namespace EasyMicroservices.Serialization.Tests.Providers.TextSerialization
         /// <summary>
         /// text serilaze provider
         /// </summary>
-        public ITextSerialization _provider { get; }
+        public ITextSerializationProvider _provider { get; }
         /// <summary>
         /// 
         /// </summary>
         /// <param name="provider"></param>
-        public BaseTextSerializationTest(ITextSerialization provider)
+        public BaseTextSerializationTest(ITextSerializationProvider provider)
         {
             _provider = provider;
         }

@@ -4,7 +4,7 @@ namespace EasyMicroservices.Serialization.Interfaces
     /// <summary>
     /// serializa to byte and visa versa
     /// </summary>
-    public interface IBinarySerialization : IBaseSerialization
+    public interface IBinarySerializationProvider : IBaseSerializationProvider
     {
         /// <summary>
         /// serializa to byte array

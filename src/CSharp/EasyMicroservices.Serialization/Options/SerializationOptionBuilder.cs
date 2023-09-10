@@ -8,14 +8,14 @@ namespace EasyMicroservices.Serialization.Options
     /// </summary>
     public static class SerializationOptionBuilder
     {
-        private static Func<IBinarySerialization> _binarySerializationFunc;
-        private static Func<ITextSerialization> _textSerializationFunc;
+        private static Func<IBinarySerializationProvider> _binarySerializationFunc;
+        private static Func<ITextSerializationProvider> _textSerializationFunc;
 
         /// <summary>
         /// 
         /// </summary>
         /// <param name="func"></param>
-        public static void UseTextSerialization(Func<ITextSerialization> func)
+        public static void UseTextSerialization(Func<ITextSerializationProvider> func)
         {
             if (_textSerializationFunc != null)
                 throw new Exception("You set UseTextSerialization once.");
@@ -26,7 +26,7 @@ namespace EasyMicroservices.Serialization.Options
         /// 
         /// </summary>
         /// <param name="func"></param>
-        public static void UseBinarySerialization(Func<IBinarySerialization> func)
+        public static void UseBinarySerialization(Func<IBinarySerializationProvider> func)
         {
             if (_binarySerializationFunc != null)
                 throw new Exception("You set UseBinarySerialization once.");
@@ -39,7 +39,7 @@ namespace EasyMicroservices.Serialization.Options
         /// </summary>
         /// <returns></returns>
         /// <exception cref="Exception"></exception>
-        public static ITextSerialization GetTextSerialization()
+        public static ITextSerializationProvider GetTextSerialization()
         {
             if (_textSerializationFunc == null)
                 throw new Exception("You did not set UseTextSerialization.");
@@ -51,7 +51,7 @@ namespace EasyMicroservices.Serialization.Options
         /// </summary>
         /// <returns></returns>
         /// <exception cref="Exception"></exception>
-        public static IBinarySerialization GetBinarySerialization()
+        public static IBinarySerializationProvider GetBinarySerialization()
         {
             if (_binarySerializationFunc != null)
                 throw new Exception("You did not set UseBinarySerialization.");

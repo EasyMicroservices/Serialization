@@ -5,7 +5,7 @@ namespace EasyMicroservices.Serialization.Interfaces
     /// <summary>
     /// general serialization method defines here
     /// </summary>
-    public interface IBaseSerialization
+    public interface IBaseSerializationProvider
     {
         /// <summary>
         /// can convert check which type is supported for serialization
