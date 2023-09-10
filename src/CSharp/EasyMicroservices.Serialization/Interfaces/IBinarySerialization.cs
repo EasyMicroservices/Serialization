@@ -19,7 +19,5 @@ namespace EasyMicroservices.Serialization.Interfaces
         /// <param name="reader"></param>
         /// <returns></returns>
         T Deserialize<T>(ReadOnlySpan<byte> reader);
-
     }
-
 }
