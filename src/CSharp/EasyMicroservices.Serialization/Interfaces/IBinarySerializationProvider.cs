@@ -4,7 +4,7 @@ namespace EasyMicroservices.Serialization.Interfaces
     /// <summary>
     /// serializa to byte and visa versa
     /// </summary>
-    public interface IBinarySerialization : IBaseSerialization
+    public interface IBinarySerializationProvider : IBaseSerializationProvider
     {
         /// <summary>
         /// serializa to byte array
@@ -19,7 +19,5 @@ namespace EasyMicroservices.Serialization.Interfaces
         /// <param name="reader"></param>
         /// <returns></returns>
         T Deserialize<T>(ReadOnlySpan<byte> reader);
-
     }
-
 }

@@ -6,7 +6,7 @@ namespace EasyMicroservices.Serialization.Providers
     /// <summary>
     /// base binary implimentaion
     /// </summary>
-    public abstract class BinarySerializationBaseProvider : BaseProvider, IBinarySerialization
+    public abstract class BinarySerializationBaseProvider : BaseProvider, IBinarySerializationProvider
     {
         /// <summary>
         /// Deserialize from byte

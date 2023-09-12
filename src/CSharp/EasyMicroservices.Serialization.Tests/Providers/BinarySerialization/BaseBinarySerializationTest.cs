@@ -11,12 +11,12 @@ namespace EasyMicroservices.Serialization.Tests.Providers.BinarySerialization
         /// <summary>
         /// binary serilaze provider
         /// </summary>
-        public IBinarySerialization _provider { get; }
+        public IBinarySerializationProvider _provider { get; }
         /// <summary>
         ///
         /// </summary>
         /// <param name="provider"></param>
-        public BaseBinarySerializationTest(IBinarySerialization provider)
+        public BaseBinarySerializationTest(IBinarySerializationProvider provider)
         {
             _provider = provider;
         }

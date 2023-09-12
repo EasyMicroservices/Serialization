@@ -6,7 +6,7 @@ namespace EasyMicroservices.Serialization.Providers
     /// <summary>
     ///  base string implimentaion
     /// </summary>
-    public abstract class TextSerializationBaseProvider : BaseProvider, ITextSerialization
+    public abstract class TextSerializationBaseProvider : BaseProvider, ITextSerializationProvider
     {
 
         /// <summary>

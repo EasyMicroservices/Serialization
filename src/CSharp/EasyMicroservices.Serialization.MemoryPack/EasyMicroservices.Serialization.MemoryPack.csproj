@@ -17,7 +17,7 @@
     <Platforms>AnyCPU;x64;x86</Platforms>
     <Authors>EasyMicroservices</Authors>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Version>0.0.0.1</Version>
+    <Version>0.0.0.2</Version>
     <Description>Serialize and deserialize wrapper</Description>
     <Copyright>EasyMicroservice@gmail.com</Copyright>
     <PackageTags>Serialize,deserialize</PackageTags>
@@ -28,7 +28,7 @@
   </PropertyGroup>
   
   <ItemGroup>
-    <PackageReference Include="MemoryPack" Version="1.9.7" />
+    <PackageReference Include="MemoryPack" Version="1.9.16" />
   </ItemGroup>
 
   <ItemGroup>

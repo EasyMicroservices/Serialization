@@ -7,7 +7,7 @@ namespace EasyMicroservices.Serialization.Providers
     /// <summary>
     /// general serialization method defines here
     /// </summary>
-    public abstract class BaseProvider : IBaseSerialization
+    public abstract class BaseProvider : IBaseSerializationProvider
     {
         /// <summary>
         /// can convert check which type is supported for serialization
