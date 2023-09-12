@@ -1,8 +1,10 @@
-﻿using System;
-using EasyMicroservices.Serialization.Options;
-using Microsoft.Extensions.DependencyInjection;
+﻿// Licensed to the .NET Foundation under one or more agreements.
+// The .NET Foundation licenses this file to you under the MIT license.
 
-namespace EasyMicroservices.Serialization.AspCore
+using System;
+using EasyMicroservices.Serialization.Options;
+
+namespace Microsoft.Extensions.DependencyInjection
 {
     /// <summary>
     /// 

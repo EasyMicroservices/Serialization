@@ -5,7 +5,7 @@ using System;
 using EasyMicroservices.Serialization.Options;
 using EasyMicroservices.Serialization.BinaryGo.Providers;
 
-namespace EasyMicroservices.Serialization
+namespace Microsoft.Extensions.DependencyInjection
 {
     /// <summary>
     /// 
