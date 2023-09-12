@@ -53,7 +53,7 @@ namespace EasyMicroservices.Serialization.Options
         /// <exception cref="Exception"></exception>
         public static IBinarySerializationProvider GetBinarySerialization()
         {
-            if (_binarySerializationFunc != null)
+            if (_binarySerializationFunc == null)
                 throw new Exception("You did not set UseBinarySerialization.");
             return _binarySerializationFunc();
         }
