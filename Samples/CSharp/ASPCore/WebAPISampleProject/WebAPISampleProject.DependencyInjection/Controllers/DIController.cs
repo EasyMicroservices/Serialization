@@ -10,13 +10,15 @@ namespace WebAPISampleProject.BinaryGo.Controllers;
 
 [Route("api/[controller]")]
 [ApiController]
-public class BinaryGoController : ControllerBase
+public class DIController : ControllerBase
 {
     private readonly IBinarySerializationProvider _binarySerialization;
+    private readonly ITextSerializationProvider _textSerialization;
 
-    public BinaryGoController(IBinarySerializationProvider binarySerialization)
+    public DIController(IBinarySerializationProvider binarySerialization, ITextSerializationProvider textSerialization)
     {
         _binarySerialization = binarySerialization;
+        _textSerialization = textSerialization;
     }
 
     [Route("Serialize")]
@@ -24,16 +26,8 @@ public class BinaryGoController : ControllerBase
     public IActionResult Serialize()
     {
         Customer model = new Customer() { Age = 51, FirstName = "Elon", LastName = "Musk" };
-        var result = _binarySerialization.Serialize(model);
-        return Ok(result.ToArray());
-    }
-
-    [Route("Deserialize")]
-    [HttpPost]
-    public IActionResult Deserialize(byte[] input)
-    {
-        var result = _binarySerialization.Deserialize<Customer>(input);
+        var result = _textSerialization.Serialize(model);
+        var binary = _binarySerialization.Serialize(model);
         return Ok(result);
     }
-
 }

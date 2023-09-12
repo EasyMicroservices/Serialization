@@ -1,20 +1,25 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAPISampleProject.BinaryGo", "WebAPISampleProject.BinaryGo\WebAPISampleProject.BinaryGo.csproj", "{F603C96F-5577-4B8C-A306-549E0CA7152B}"
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34018.315
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebAPISampleProject.BinaryGo", "WebAPISampleProject.BinaryGo\WebAPISampleProject.BinaryGo.csproj", "{F603C96F-5577-4B8C-A306-549E0CA7152B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAPISampleProject.MessagePack", "WebAPISampleProject.MessagePack\WebAPISampleProject.MessagePack.csproj", "{A1CC73D8-23BF-4827-AC4E-82C86AF591EF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebAPISampleProject.MessagePack", "WebAPISampleProject.MessagePack\WebAPISampleProject.MessagePack.csproj", "{A1CC73D8-23BF-4827-AC4E-82C86AF591EF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common", "Common\Common.csproj", "{F7966FE8-0D7C-4F72-9096-BFC51CCBC37F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Common", "Common\Common.csproj", "{F7966FE8-0D7C-4F72-9096-BFC51CCBC37F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAPISampleProject.MemoryPack", "WebAPISampleProject.MemoryPack\WebAPISampleProject.MemoryPack.csproj", "{1A5784AC-360B-4125-AB44-7731CE42FC4D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebAPISampleProject.MemoryPack", "WebAPISampleProject.MemoryPack\WebAPISampleProject.MemoryPack.csproj", "{1A5784AC-360B-4125-AB44-7731CE42FC4D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAPISampleProject.NewtonSoft.Json", "WebAPISampleProject.NewtonSoft.Json\WebAPISampleProject.NewtonSoft.Json.csproj", "{5C52E3C0-A61F-46FF-8058-7BBB9E305175}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebAPISampleProject.NewtonSoft.Json", "WebAPISampleProject.NewtonSoft.Json\WebAPISampleProject.NewtonSoft.Json.csproj", "{5C52E3C0-A61F-46FF-8058-7BBB9E305175}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAPISampleProject.System.Text.Json", "WebAPISampleProject.System.Text.Json\WebAPISampleProject.System.Text.Json.csproj", "{A22533D2-41D5-4790-AAF3-DAA9A980CF1F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebAPISampleProject.System.Text.Json", "WebAPISampleProject.System.Text.Json\WebAPISampleProject.System.Text.Json.csproj", "{A22533D2-41D5-4790-AAF3-DAA9A980CF1F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAPISampleProject.System.Text.Xml", "WebAPISampleProject.System.Text.Xml\WebAPISampleProject.System.Text.Xml.csproj", "{0BBD61EB-BD84-4AA1-B451-9E9043A1EBC4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebAPISampleProject.System.Text.Xml", "WebAPISampleProject.System.Text.Xml\WebAPISampleProject.System.Text.Xml.csproj", "{0BBD61EB-BD84-4AA1-B451-9E9043A1EBC4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAPISampleProject.System.YamlDotNet", "WebAPISampleProject.System.YamlDotNet\WebAPISampleProject.System.YamlDotNet.csproj", "{3425E080-5DF6-45D8-9538-B74E1E8A8C39}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebAPISampleProject.System.YamlDotNet", "WebAPISampleProject.System.YamlDotNet\WebAPISampleProject.System.YamlDotNet.csproj", "{3425E080-5DF6-45D8-9538-B74E1E8A8C39}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAPISampleProject.DependencyInjection", "WebAPISampleProject.DependencyInjection\WebAPISampleProject.DependencyInjection.csproj", "{BAE024EF-23E4-4CBE-99E3-A25CBDB955D1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -54,5 +59,12 @@ Global
 		{3425E080-5DF6-45D8-9538-B74E1E8A8C39}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3425E080-5DF6-45D8-9538-B74E1E8A8C39}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3425E080-5DF6-45D8-9538-B74E1E8A8C39}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BAE024EF-23E4-4CBE-99E3-A25CBDB955D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BAE024EF-23E4-4CBE-99E3-A25CBDB955D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BAE024EF-23E4-4CBE-99E3-A25CBDB955D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BAE024EF-23E4-4CBE-99E3-A25CBDB955D1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
 	EndGlobalSection
 EndGlobal

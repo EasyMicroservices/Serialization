@@ -12,9 +12,9 @@ namespace WebAPISampleProject.NewtonSoft.Json.Controllers
     [ApiController]
     public class NewtonSoftJsonController : ControllerBase
     {
-        private readonly ITextSerialization _textSerialization;
+        private readonly ITextSerializationProvider _textSerialization;
 
-        public NewtonSoftJsonController(ITextSerialization  textSerialization)
+        public NewtonSoftJsonController(ITextSerializationProvider  textSerialization)
         {
             _textSerialization = textSerialization;
         }
