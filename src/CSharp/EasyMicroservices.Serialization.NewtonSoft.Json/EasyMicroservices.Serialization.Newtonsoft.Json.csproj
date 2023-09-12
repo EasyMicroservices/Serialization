@@ -17,7 +17,7 @@
 		<Platforms>AnyCPU;x64;x86</Platforms>
 		<Authors>EasyMicroservices</Authors>
 		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-		<Version>0.0.0.5</Version>
+		<Version>0.0.0.6</Version>
 		<Description>Serialize and deserialize wrapper</Description>
 		<Copyright>EasyMicroservices@gmail.com</Copyright>
 		<PackageTags>Serialize,deserialize</PackageTags>
