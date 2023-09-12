@@ -2,7 +2,7 @@
 using EasyMicroservices.Serialization.Options;
 using EasyMicroservices.Serialization.System.Text.Json.Providers;
 
-namespace EasyMicroservices.Serialization
+namespace Microsoft.Extensions.DependencyInjection
 {
     /// <summary>
     /// 

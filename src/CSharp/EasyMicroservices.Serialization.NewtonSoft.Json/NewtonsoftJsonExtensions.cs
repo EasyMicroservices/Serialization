@@ -2,7 +2,7 @@
 using EasyMicroservices.Serialization.Options;
 using EasyMicroservices.Serialization.Newtonsoft.Json.Providers;
 
-namespace EasyMicroservices.Serialization
+namespace Microsoft.Extensions.DependencyInjection
 {
     /// <summary>
     /// 
