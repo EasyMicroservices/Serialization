@@ -4,13 +4,14 @@ Wrapper for any Serialize package
 Install packages:
 
 ```
+Core package:
 
 EasyMicroservices.Serialization.DependencyInjection
 
 Use package:
     1. EasyMicroservices.Serialization.BinaryGo
 
-2. EasyMicroservices.Serialization.Newtonsoft.Json
+    2. EasyMicroservices.Serialization.Newtonsoft.Json
 ```
 
  Example:
