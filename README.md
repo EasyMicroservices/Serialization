@@ -1,5 +1,18 @@
 # Serialization
 Wrapper for any Serialize package
+
+Install packages:
+
+```
+
+EasyMicroservices.Serialization.DependencyInjection
+
+Use package:
+    1. EasyMicroservices.Serialization.BinaryGo
+
+2. EasyMicroservices.Serialization.Newtonsoft.Json
+```
+
  Example:
 
 ```csharp
