@@ -28,10 +28,10 @@ Install packages:
 
 ```csharp
             builder.Services.AddSerialization(o => 
-             { 
-                 o.UseBinaryGo(); 
-                 o.UseNewtonsoftJson(); 
-             });
+            { 
+                o.UseBinaryGo(); 
+                o.UseNewtonsoftJson(); 
+            });
 ```
 
 [![Line Coverage Status](./src/CSharp/coverage-badge-line.svg)](https://github.com/danpetitt/open-cover-badge-generator-action/)
