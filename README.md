@@ -24,14 +24,54 @@ Install packages:
    
    [![NuGet](https://img.shields.io/badge/EasyMicroservicesSerialization-YamlDotNet-orange.svg)](https://www.nuget.org/packages/EasyMicroservices.Serialization.YamlDotNet/) ![Badge](https://img.shields.io/badge/Text-8A2BE2)
 
- Example:
+Startup:
 
 ```csharp
-            builder.Services.AddSerialization(o => 
-            { 
-                o.UseBinaryGo(); 
-                o.UseNewtonsoftJson(); 
-            });
+public class Startup
+{
+    //...
+    
+    public void ConfigureServices(IServiceCollection services)
+    {
+        //configuration
+        services.AddSerialization(o => 
+        { 
+            o.UseBinaryGo(); 
+            o.UseNewtonsoftJson(); 
+        }); 
+    }    
+}
 ```
+Usage:
 
+```csharp
+
+using Common.Models;
+using EasyMicroservices.Serialization.Interfaces;
+using Microsoft.AspNetCore.Mvc;
+
+[Route("api/[controller]")]
+[ApiController]
+public class DIController : ControllerBase
+{
+    private readonly IBinarySerializationProvider _binarySerialization;
+    private readonly ITextSerializationProvider _textSerialization;
+
+    public DIController(IBinarySerializationProvider binarySerialization, ITextSerializationProvider textSerialization)
+    {
+        _binarySerialization = binarySerialization;
+        _textSerialization = textSerialization;
+    }
+
+    [Route("Serialize")]
+    [HttpGet]
+    public IActionResult Serialize()
+    {
+        Customer model = new Customer() { Age = 51, FirstName = "Elon", LastName = "Musk" };
+        var result = _textSerialization.Serialize(model);
+        var binary = _binarySerialization.Serialize(model);
+        return Ok(result);
+    }
+}
+```
 [![Line Coverage Status](./src/CSharp/coverage-badge-line.svg)](https://github.com/danpetitt/open-cover-badge-generator-action/)
