@@ -1,9 +1,9 @@
 <Project Sdk="Microsoft.NET.Sdk">
   
   <Choose>
-    <When Condition="$(SolutionFileName.Contains('Net7'))">
+    <When Condition="$(SolutionFileName.Contains('-net'))">
       <PropertyGroup>
-        <TargetFrameworks>net7.0</TargetFrameworks>
+        <TargetFramework>$(SolutionFileName.Split('-')[1].Replace('.sln',''))</TargetFramework>
       </PropertyGroup>
     </When>
     <Otherwise>
