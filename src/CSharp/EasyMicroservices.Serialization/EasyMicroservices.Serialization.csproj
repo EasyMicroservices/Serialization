@@ -17,7 +17,7 @@
 		<Platforms>AnyCPU;x64;x86</Platforms>
 		<Authors>EasyMicroservices</Authors>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Version>0.0.0.4</Version>
+    <Version>0.0.0.8</Version>
 		<Description>Serialize and deserialize wrapper</Description>
 		<Copyright>EasyMicroservices@gmail.com</Copyright>
 		<PackageTags>Serialize,deserialize</PackageTags>
@@ -32,7 +32,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="EasyMicroservices.Utilities" Version="0.0.0.11" />
+    <PackageReference Include="EasyMicroservices.Utilities" Version="0.0.0.13" />
   </ItemGroup>
 
 </Project>
