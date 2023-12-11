@@ -22,7 +22,7 @@ jobs:
       - name: Build
         run: dotnet build ./src/CSharp/EasyMicroservices.Serialization.sln --no-restore
       - name: Test
-        run: dotnet test ./src/CSharp/EasyMicroservices.Serialization.sln --no-build --verbosity normal
+        run: dotnet test ./src/CSharp/EasyMicroservices.Serialization.sln --no-build --verbosity diag
       - name: Create the package
         run: dotnet pack ./src/CSharp/EasyMicroservices.Serialization.sln --output nupkgs
       - name: Publish the package to NuGet.org
