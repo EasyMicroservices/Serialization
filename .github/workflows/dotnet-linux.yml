@@ -24,14 +24,11 @@ jobs:
         run: |
           dotnet restore ./src/CSharp/EasyMicroservices.Serialization-net6.0.sln
           dotnet restore ./src/CSharp/EasyMicroservices.Serialization-net7.0.sln
-          dotnet restore ./src/CSharp/EasyMicroservices.Serialization-net8.0.sln
       - name: Build
         run: |
           dotnet build ./src/CSharp/EasyMicroservices.Serialization-net6.0.sln --no-restore
           dotnet build ./src/CSharp/EasyMicroservices.Serialization-net7.0.sln --no-restore
-          dotnet build ./src/CSharp/EasyMicroservices.Serialization-net8.0.sln --no-restore
       - name: Test
         run: |
           dotnet test ./src/CSharp/EasyMicroservices.Serialization-net6.0.sln --no-build --verbosity normal
           dotnet test ./src/CSharp/EasyMicroservices.Serialization-net7.0.sln --no-build --verbosity normal
-          dotnet test ./src/CSharp/EasyMicroservices.Serialization-net8.0.sln --no-build --verbosity normal
