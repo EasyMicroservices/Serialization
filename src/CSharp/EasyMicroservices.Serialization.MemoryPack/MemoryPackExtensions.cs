@@ -1,6 +1,6 @@
 ﻿using System;
-using EasyMicroservices.Serialization.Options;
 using EasyMicroservices.Serialization.MemoryPack.Providers;
+using EasyMicroservices.Serialization.Options;
 
 namespace Microsoft.Extensions.DependencyInjection
 {
