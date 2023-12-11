@@ -19,9 +19,15 @@ jobs:
           DOTNET_INSTALL_DIR: /usr/share/dotnet
       - name: build and test
         run: |
-          dotnet restore ./src/CSharp/EasyMicroservices.Serialization.sln
-          dotnet build ./src/CSharp/EasyMicroservices.Serialization.sln --no-restore
-          dotnet test ./src/CSharp/EasyMicroservices.Serialization.sln --no-build
+          dotnet restore ./src/CSharp/EasyMicroservices.Serialization-net6.0.sln
+          dotnet restore ./src/CSharp/EasyMicroservices.Serialization-net7.0.sln
+          dotnet restore ./src/CSharp/EasyMicroservices.Serialization-net8.0.sln
+          dotnet build ./src/CSharp/EasyMicroservices.Serialization-net6.0.sln --no-restore
+          dotnet build ./src/CSharp/EasyMicroservices.Serialization-net7.0.sln --no-restore
+          dotnet build ./src/CSharp/EasyMicroservices.Serialization-net8.0.sln --no-restore
+          dotnet test ./src/CSharp/EasyMicroservices.Serialization-net6.0.sln --no-build
+          dotnet test ./src/CSharp/EasyMicroservices.Serialization-net7.0.sln --no-build
+          dotnet test ./src/CSharp/EasyMicroservices.Serialization-net8.0.sln --no-build
       - name: setup semantic-release
         run: |
           npm install -D semantic-release
