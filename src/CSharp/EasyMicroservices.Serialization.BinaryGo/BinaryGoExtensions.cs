@@ -2,8 +2,8 @@
 // The .NET Foundation licenses this file to you under the MIT license.
 
 using System;
-using EasyMicroservices.Serialization.Options;
 using EasyMicroservices.Serialization.BinaryGo.Providers;
+using EasyMicroservices.Serialization.Options;
 
 namespace Microsoft.Extensions.DependencyInjection
 {
