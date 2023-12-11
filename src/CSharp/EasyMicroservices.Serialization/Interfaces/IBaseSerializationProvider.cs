@@ -13,5 +13,18 @@ namespace EasyMicroservices.Serialization.Interfaces
         /// <param name="objectType"></param>
         /// <returns></returns>
         bool CanConvert(Type objectType);
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="value"></param>
+        /// <returns></returns>
+        ReadOnlySpan<byte> SerializeToBytes<T>(T value);
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="bytes"></param>
+        /// <returns></returns>
+        T DeserializeFromBytes<T>(ReadOnlySpan<byte> bytes);
     }
 }
