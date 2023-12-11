@@ -1,6 +1,6 @@
 ﻿using System;
-using EasyMicroservices.Serialization.Options;
 using EasyMicroservices.Serialization.Newtonsoft.Json.Providers;
+using EasyMicroservices.Serialization.Options;
 
 namespace Microsoft.Extensions.DependencyInjection
 {

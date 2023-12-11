@@ -1,0 +1,775 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CoverageSession>
+  <Summary numSequencePoints="168" visitedSequencePoints="59" numBranchPoints="14" visitedBranchPoints="0" sequenceCoverage="35.11" branchCoverage="0" maxCyclomaticComplexity="22" minCyclomaticComplexity="3" visitedClasses="6" numClasses="17" visitedMethods="14" numMethods="40" />
+  <Modules>
+    <Module hash="12E7D0FB-1AAF-4865-9015-A9BD605F7267">
+      <ModulePath>EasyMicroservices.Serialization.System.Text.Json.dll</ModulePath>
+      <ModuleTime>2023-12-11T05:53:23</ModuleTime>
+      <ModuleName>EasyMicroservices.Serialization.System.Text.Json</ModuleName>
+      <Files>
+        <File uid="1" fullPath="/home/runner/work/Serialization/Serialization/src/CSharp/EasyMicroservices.Serialization.System.Text.Json/SystemTextJsonExtensions.cs" />
+        <File uid="2" fullPath="/home/runner/work/Serialization/Serialization/src/CSharp/EasyMicroservices.Serialization.System.Text.Json/Providers/SystemTextJsonBinaryProvider.cs" />
+        <File uid="3" fullPath="/home/runner/work/Serialization/Serialization/src/CSharp/EasyMicroservices.Serialization.System.Text.Json/Providers/SystemTextJsonProvider.cs" />
+      </Files>
+      <Classes>
+        <Class>
+          <Summary numSequencePoints="10" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="1" visitedMethods="0" numMethods="2" />
+          <FullName>Microsoft.Extensions.DependencyInjection.SystemTextJsonExtensions</FullName>
+          <Methods>
+            <Method cyclomaticComplexity="1" nPathComplexity="1" sequenceCoverage="0" branchCoverage="100" isConstructor="False" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="5" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken />
+              <Name>EasyMicroservices.Serialization.Options.SerializationOption Microsoft.Extensions.DependencyInjection.SystemTextJsonExtensions::UseSystemTextJson(EasyMicroservices.Serialization.Options.SerializationOption)</Name>
+              <FileRef uid="1" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="18" ordinal="0" sl="18" sc="1" el="18" ec="2" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="0" uspid="19" ordinal="1" sl="19" sc="1" el="19" ec="2" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="0" uspid="20" ordinal="2" sl="20" sc="1" el="20" ec="2" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="0" uspid="21" ordinal="3" sl="21" sc="1" el="21" ec="2" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="0" uspid="22" ordinal="4" sl="22" sc="1" el="22" ec="2" bec="0" bev="0" fileid="1" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="0" offset="0" sc="0" sl="18" ec="1" el="22" bec="0" bev="0" fileid="1" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="1" sequenceCoverage="0" branchCoverage="100" isConstructor="False" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="5" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken />
+              <Name>EasyMicroservices.Serialization.Options.SerializationOption Microsoft.Extensions.DependencyInjection.SystemTextJsonExtensions::UseSystemTextJsonBinary(EasyMicroservices.Serialization.Options.SerializationOption)</Name>
+              <FileRef uid="1" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="30" ordinal="0" sl="30" sc="1" el="30" ec="2" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="0" uspid="31" ordinal="1" sl="31" sc="1" el="31" ec="2" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="0" uspid="32" ordinal="2" sl="32" sc="1" el="32" ec="2" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="0" uspid="33" ordinal="3" sl="33" sc="1" el="33" ec="2" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="0" uspid="34" ordinal="4" sl="34" sc="1" el="34" ec="2" bec="0" bev="0" fileid="1" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="1" offset="1" sc="0" sl="30" ec="1" el="34" bec="0" bev="0" fileid="1" xmlns:p8="xsi" />
+            </Method>
+          </Methods>
+        </Class>
+        <Class>
+          <Summary numSequencePoints="13" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="1" visitedMethods="0" numMethods="4" />
+          <FullName>EasyMicroservices.Serialization.System.Text.Json.Providers.SystemTextJsonBinaryProvider</FullName>
+          <Methods>
+            <Method cyclomaticComplexity="1" nPathComplexity="1" sequenceCoverage="0" branchCoverage="100" isConstructor="False" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="3" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken />
+              <Name>T EasyMicroservices.Serialization.System.Text.Json.Providers.SystemTextJsonBinaryProvider::Deserialize(System.ReadOnlySpan`1&lt;System.Byte&gt;)</Name>
+              <FileRef uid="2" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="37" ordinal="0" sl="37" sc="1" el="37" ec="2" bec="0" bev="0" fileid="2" />
+                <SequencePoint vc="0" uspid="38" ordinal="1" sl="38" sc="1" el="38" ec="2" bec="0" bev="0" fileid="2" />
+                <SequencePoint vc="0" uspid="39" ordinal="2" sl="39" sc="1" el="39" ec="2" bec="0" bev="0" fileid="2" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="0" offset="0" sc="0" sl="37" ec="1" el="39" bec="0" bev="0" fileid="2" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="1" sequenceCoverage="0" branchCoverage="100" isConstructor="False" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="3" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken />
+              <Name>System.ReadOnlySpan`1&lt;System.Byte&gt; EasyMicroservices.Serialization.System.Text.Json.Providers.SystemTextJsonBinaryProvider::Serialize(T)</Name>
+              <FileRef uid="2" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="47" ordinal="0" sl="47" sc="1" el="47" ec="2" bec="0" bev="0" fileid="2" />
+                <SequencePoint vc="0" uspid="48" ordinal="1" sl="48" sc="1" el="48" ec="2" bec="0" bev="0" fileid="2" />
+                <SequencePoint vc="0" uspid="49" ordinal="2" sl="49" sc="1" el="49" ec="2" bec="0" bev="0" fileid="2" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="1" offset="1" sc="0" sl="47" ec="1" el="49" bec="0" bev="0" fileid="2" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="1" sequenceCoverage="0" branchCoverage="100" isConstructor="True" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="4" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Void EasyMicroservices.Serialization.System.Text.Json.Providers.SystemTextJsonBinaryProvider::.ctor(System.Text.Json.JsonSerializerOptions)</Name>
+              <FileRef uid="2" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="18" ordinal="0" sl="18" sc="1" el="18" ec="2" bec="0" bev="0" fileid="2" />
+                <SequencePoint vc="0" uspid="19" ordinal="1" sl="19" sc="1" el="19" ec="2" bec="0" bev="0" fileid="2" />
+                <SequencePoint vc="0" uspid="20" ordinal="2" sl="20" sc="1" el="20" ec="2" bec="0" bev="0" fileid="2" />
+                <SequencePoint vc="0" uspid="21" ordinal="3" sl="21" sc="1" el="21" ec="2" bec="0" bev="0" fileid="2" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="2" offset="2" sc="0" sl="18" ec="1" el="21" bec="0" bev="0" fileid="2" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="1" sequenceCoverage="0" branchCoverage="100" isConstructor="True" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="3" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Void EasyMicroservices.Serialization.System.Text.Json.Providers.SystemTextJsonBinaryProvider::.ctor()</Name>
+              <FileRef uid="2" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="25" ordinal="0" sl="25" sc="1" el="25" ec="2" bec="0" bev="0" fileid="2" />
+                <SequencePoint vc="0" uspid="26" ordinal="1" sl="26" sc="1" el="26" ec="2" bec="0" bev="0" fileid="2" />
+                <SequencePoint vc="0" uspid="27" ordinal="2" sl="27" sc="1" el="27" ec="2" bec="0" bev="0" fileid="2" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="3" offset="3" sc="0" sl="25" ec="1" el="27" bec="0" bev="0" fileid="2" xmlns:p8="xsi" />
+            </Method>
+          </Methods>
+        </Class>
+        <Class>
+          <Summary numSequencePoints="13" visitedSequencePoints="9" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="69.23" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="1" numClasses="1" visitedMethods="3" numMethods="4" />
+          <FullName>EasyMicroservices.Serialization.System.Text.Json.Providers.SystemTextJsonProvider</FullName>
+          <Methods>
+            <Method cyclomaticComplexity="1" nPathComplexity="1" sequenceCoverage="100" branchCoverage="100" isConstructor="False" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="3" visitedSequencePoints="3" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken />
+              <Name>T EasyMicroservices.Serialization.System.Text.Json.Providers.SystemTextJsonProvider::Deserialize(System.String)</Name>
+              <FileRef uid="3" />
+              <SequencePoints>
+                <SequencePoint vc="3" uspid="39" ordinal="0" sl="39" sc="1" el="39" ec="2" bec="0" bev="0" fileid="3" />
+                <SequencePoint vc="3" uspid="40" ordinal="1" sl="40" sc="1" el="40" ec="2" bec="0" bev="0" fileid="3" />
+                <SequencePoint vc="3" uspid="41" ordinal="2" sl="41" sc="1" el="41" ec="2" bec="0" bev="0" fileid="3" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="3" uspid="0" p8:type="SequencePoint" ordinal="0" offset="0" sc="0" sl="39" ec="1" el="41" bec="0" bev="0" fileid="3" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="1" sequenceCoverage="100" branchCoverage="100" isConstructor="False" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="3" visitedSequencePoints="3" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken />
+              <Name>System.String EasyMicroservices.Serialization.System.Text.Json.Providers.SystemTextJsonProvider::Serialize(T)</Name>
+              <FileRef uid="3" />
+              <SequencePoints>
+                <SequencePoint vc="3" uspid="49" ordinal="0" sl="49" sc="1" el="49" ec="2" bec="0" bev="0" fileid="3" />
+                <SequencePoint vc="3" uspid="50" ordinal="1" sl="50" sc="1" el="50" ec="2" bec="0" bev="0" fileid="3" />
+                <SequencePoint vc="3" uspid="51" ordinal="2" sl="51" sc="1" el="51" ec="2" bec="0" bev="0" fileid="3" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="3" uspid="0" p8:type="SequencePoint" ordinal="1" offset="1" sc="0" sl="49" ec="1" el="51" bec="0" bev="0" fileid="3" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="1" sequenceCoverage="0" branchCoverage="100" isConstructor="True" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="4" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Void EasyMicroservices.Serialization.System.Text.Json.Providers.SystemTextJsonProvider::.ctor(System.Text.Json.JsonSerializerOptions)</Name>
+              <FileRef uid="3" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="20" ordinal="0" sl="20" sc="1" el="20" ec="2" bec="0" bev="0" fileid="3" />
+                <SequencePoint vc="0" uspid="21" ordinal="1" sl="21" sc="1" el="21" ec="2" bec="0" bev="0" fileid="3" />
+                <SequencePoint vc="0" uspid="22" ordinal="2" sl="22" sc="1" el="22" ec="2" bec="0" bev="0" fileid="3" />
+                <SequencePoint vc="0" uspid="23" ordinal="3" sl="23" sc="1" el="23" ec="2" bec="0" bev="0" fileid="3" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="2" offset="2" sc="0" sl="20" ec="1" el="23" bec="0" bev="0" fileid="3" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="1" sequenceCoverage="100" branchCoverage="100" isConstructor="True" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="3" visitedSequencePoints="3" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Void EasyMicroservices.Serialization.System.Text.Json.Providers.SystemTextJsonProvider::.ctor()</Name>
+              <FileRef uid="3" />
+              <SequencePoints>
+                <SequencePoint vc="6" uspid="28" ordinal="0" sl="28" sc="1" el="28" ec="2" bec="0" bev="0" fileid="3" />
+                <SequencePoint vc="6" uspid="29" ordinal="1" sl="29" sc="1" el="29" ec="2" bec="0" bev="0" fileid="3" />
+                <SequencePoint vc="6" uspid="30" ordinal="2" sl="30" sc="1" el="30" ec="2" bec="0" bev="0" fileid="3" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="3" uspid="0" p8:type="SequencePoint" ordinal="3" offset="3" sc="0" sl="28" ec="1" el="30" bec="0" bev="0" fileid="3" xmlns:p8="xsi" />
+            </Method>
+          </Methods>
+        </Class>
+      </Classes>
+    </Module>
+    <Module hash="5E417ECE-3B02-4124-A436-6F7E470FE2BC">
+      <ModulePath>EasyMicroservices.Serialization.BinaryGo.dll</ModulePath>
+      <ModuleTime>2023-12-11T05:53:23</ModuleTime>
+      <ModuleName>EasyMicroservices.Serialization.BinaryGo</ModuleName>
+      <Files>
+        <File uid="4" fullPath="/home/runner/work/Serialization/Serialization/src/CSharp/EasyMicroservices.Serialization.BinaryGo/Providers/BinaryGoProvider.cs" />
+        <File uid="5" fullPath="/home/runner/work/Serialization/Serialization/src/CSharp/EasyMicroservices.Serialization.BinaryGo/BinaryGoExtensions.cs" />
+      </Files>
+      <Classes>
+        <Class>
+          <Summary numSequencePoints="10" visitedSequencePoints="10" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="1" numClasses="1" visitedMethods="2" numMethods="2" />
+          <FullName>EasyMicroservices.Serialization.BinaryGo.Providers.BinaryGoProvider</FullName>
+          <Methods>
+            <Method cyclomaticComplexity="1" nPathComplexity="1" sequenceCoverage="100" branchCoverage="100" isConstructor="False" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="5" visitedSequencePoints="5" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken />
+              <Name>T EasyMicroservices.Serialization.BinaryGo.Providers.BinaryGoProvider::Deserialize(System.ReadOnlySpan`1&lt;System.Byte&gt;)</Name>
+              <FileRef uid="4" />
+              <SequencePoints>
+                <SequencePoint vc="6" uspid="23" ordinal="0" sl="23" sc="1" el="23" ec="2" bec="0" bev="0" fileid="4" />
+                <SequencePoint vc="6" uspid="24" ordinal="1" sl="24" sc="1" el="24" ec="2" bec="0" bev="0" fileid="4" />
+                <SequencePoint vc="6" uspid="25" ordinal="2" sl="25" sc="1" el="25" ec="2" bec="0" bev="0" fileid="4" />
+                <SequencePoint vc="6" uspid="26" ordinal="3" sl="26" sc="1" el="26" ec="2" bec="0" bev="0" fileid="4" />
+                <SequencePoint vc="6" uspid="27" ordinal="4" sl="27" sc="1" el="27" ec="2" bec="0" bev="0" fileid="4" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="5" uspid="0" p8:type="SequencePoint" ordinal="0" offset="0" sc="0" sl="23" ec="1" el="27" bec="0" bev="0" fileid="4" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="1" sequenceCoverage="100" branchCoverage="100" isConstructor="False" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="5" visitedSequencePoints="5" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken />
+              <Name>System.ReadOnlySpan`1&lt;System.Byte&gt; EasyMicroservices.Serialization.BinaryGo.Providers.BinaryGoProvider::Serialize(T)</Name>
+              <FileRef uid="4" />
+              <SequencePoints>
+                <SequencePoint vc="6" uspid="35" ordinal="0" sl="35" sc="1" el="35" ec="2" bec="0" bev="0" fileid="4" />
+                <SequencePoint vc="6" uspid="36" ordinal="1" sl="36" sc="1" el="36" ec="2" bec="0" bev="0" fileid="4" />
+                <SequencePoint vc="6" uspid="37" ordinal="2" sl="37" sc="1" el="37" ec="2" bec="0" bev="0" fileid="4" />
+                <SequencePoint vc="6" uspid="38" ordinal="3" sl="38" sc="1" el="38" ec="2" bec="0" bev="0" fileid="4" />
+                <SequencePoint vc="6" uspid="39" ordinal="4" sl="39" sc="1" el="39" ec="2" bec="0" bev="0" fileid="4" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="5" uspid="0" p8:type="SequencePoint" ordinal="1" offset="1" sc="0" sl="35" ec="1" el="39" bec="0" bev="0" fileid="4" xmlns:p8="xsi" />
+            </Method>
+          </Methods>
+        </Class>
+        <Class>
+          <Summary numSequencePoints="5" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="1" visitedMethods="0" numMethods="1" />
+          <FullName>Microsoft.Extensions.DependencyInjection.BinaryGoExtensions</FullName>
+          <Methods>
+            <Method cyclomaticComplexity="1" nPathComplexity="1" sequenceCoverage="0" branchCoverage="100" isConstructor="False" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="5" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken />
+              <Name>EasyMicroservices.Serialization.Options.SerializationOption Microsoft.Extensions.DependencyInjection.BinaryGoExtensions::UseBinaryGo(EasyMicroservices.Serialization.Options.SerializationOption)</Name>
+              <FileRef uid="5" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="21" ordinal="0" sl="21" sc="1" el="21" ec="2" bec="0" bev="0" fileid="5" />
+                <SequencePoint vc="0" uspid="22" ordinal="1" sl="22" sc="1" el="22" ec="2" bec="0" bev="0" fileid="5" />
+                <SequencePoint vc="0" uspid="23" ordinal="2" sl="23" sc="1" el="23" ec="2" bec="0" bev="0" fileid="5" />
+                <SequencePoint vc="0" uspid="24" ordinal="3" sl="24" sc="1" el="24" ec="2" bec="0" bev="0" fileid="5" />
+                <SequencePoint vc="0" uspid="25" ordinal="4" sl="25" sc="1" el="25" ec="2" bec="0" bev="0" fileid="5" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="0" offset="0" sc="0" sl="21" ec="1" el="25" bec="0" bev="0" fileid="5" xmlns:p8="xsi" />
+            </Method>
+          </Methods>
+        </Class>
+      </Classes>
+    </Module>
+    <Module hash="CF430B95-406B-4A2C-8DED-D813D987CE14">
+      <ModulePath>EasyMicroservices.Serialization.Newtonsoft.Json.dll</ModulePath>
+      <ModuleTime>2023-12-11T05:53:23</ModuleTime>
+      <ModuleName>EasyMicroservices.Serialization.Newtonsoft.Json</ModuleName>
+      <Files>
+        <File uid="6" fullPath="/home/runner/work/Serialization/Serialization/src/CSharp/EasyMicroservices.Serialization.NewtonSoft.Json/Providers/NewtonsoftJsonProvider.cs" />
+        <File uid="7" fullPath="/home/runner/work/Serialization/Serialization/src/CSharp/EasyMicroservices.Serialization.NewtonSoft.Json/NewtonsoftJsonExtensions.cs" />
+      </Files>
+      <Classes>
+        <Class>
+          <Summary numSequencePoints="13" visitedSequencePoints="9" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="69.23" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="1" numClasses="1" visitedMethods="3" numMethods="4" />
+          <FullName>EasyMicroservices.Serialization.Newtonsoft.Json.Providers.NewtonsoftJsonProvider</FullName>
+          <Methods>
+            <Method cyclomaticComplexity="1" nPathComplexity="1" sequenceCoverage="100" branchCoverage="100" isConstructor="False" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="3" visitedSequencePoints="3" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken />
+              <Name>T EasyMicroservices.Serialization.Newtonsoft.Json.Providers.NewtonsoftJsonProvider::Deserialize(System.String)</Name>
+              <FileRef uid="6" />
+              <SequencePoints>
+                <SequencePoint vc="3" uspid="39" ordinal="0" sl="39" sc="1" el="39" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="3" uspid="40" ordinal="1" sl="40" sc="1" el="40" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="3" uspid="41" ordinal="2" sl="41" sc="1" el="41" ec="2" bec="0" bev="0" fileid="6" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="3" uspid="0" p8:type="SequencePoint" ordinal="0" offset="0" sc="0" sl="39" ec="1" el="41" bec="0" bev="0" fileid="6" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="1" sequenceCoverage="100" branchCoverage="100" isConstructor="False" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="3" visitedSequencePoints="3" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken />
+              <Name>System.String EasyMicroservices.Serialization.Newtonsoft.Json.Providers.NewtonsoftJsonProvider::Serialize(T)</Name>
+              <FileRef uid="6" />
+              <SequencePoints>
+                <SequencePoint vc="3" uspid="49" ordinal="0" sl="49" sc="1" el="49" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="3" uspid="50" ordinal="1" sl="50" sc="1" el="50" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="3" uspid="51" ordinal="2" sl="51" sc="1" el="51" ec="2" bec="0" bev="0" fileid="6" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="3" uspid="0" p8:type="SequencePoint" ordinal="1" offset="1" sc="0" sl="49" ec="1" el="51" bec="0" bev="0" fileid="6" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="1" sequenceCoverage="0" branchCoverage="100" isConstructor="True" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="4" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Void EasyMicroservices.Serialization.Newtonsoft.Json.Providers.NewtonsoftJsonProvider::.ctor(Newtonsoft.Json.JsonSerializerSettings)</Name>
+              <FileRef uid="6" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="20" ordinal="0" sl="20" sc="1" el="20" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="0" uspid="21" ordinal="1" sl="21" sc="1" el="21" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="0" uspid="22" ordinal="2" sl="22" sc="1" el="22" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="0" uspid="23" ordinal="3" sl="23" sc="1" el="23" ec="2" bec="0" bev="0" fileid="6" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="2" offset="2" sc="0" sl="20" ec="1" el="23" bec="0" bev="0" fileid="6" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="1" sequenceCoverage="100" branchCoverage="100" isConstructor="True" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="3" visitedSequencePoints="3" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Void EasyMicroservices.Serialization.Newtonsoft.Json.Providers.NewtonsoftJsonProvider::.ctor()</Name>
+              <FileRef uid="6" />
+              <SequencePoints>
+                <SequencePoint vc="6" uspid="28" ordinal="0" sl="28" sc="1" el="28" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="6" uspid="29" ordinal="1" sl="29" sc="1" el="29" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="6" uspid="30" ordinal="2" sl="30" sc="1" el="30" ec="2" bec="0" bev="0" fileid="6" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="3" uspid="0" p8:type="SequencePoint" ordinal="3" offset="3" sc="0" sl="28" ec="1" el="30" bec="0" bev="0" fileid="6" xmlns:p8="xsi" />
+            </Method>
+          </Methods>
+        </Class>
+        <Class>
+          <Summary numSequencePoints="5" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="1" visitedMethods="0" numMethods="1" />
+          <FullName>Microsoft.Extensions.DependencyInjection.NewtonsoftJsonExtensions</FullName>
+          <Methods>
+            <Method cyclomaticComplexity="1" nPathComplexity="1" sequenceCoverage="0" branchCoverage="100" isConstructor="False" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="5" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken />
+              <Name>EasyMicroservices.Serialization.Options.SerializationOption Microsoft.Extensions.DependencyInjection.NewtonsoftJsonExtensions::UseNewtonsoftJson(EasyMicroservices.Serialization.Options.SerializationOption)</Name>
+              <FileRef uid="7" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="18" ordinal="0" sl="18" sc="1" el="18" ec="2" bec="0" bev="0" fileid="7" />
+                <SequencePoint vc="0" uspid="19" ordinal="1" sl="19" sc="1" el="19" ec="2" bec="0" bev="0" fileid="7" />
+                <SequencePoint vc="0" uspid="20" ordinal="2" sl="20" sc="1" el="20" ec="2" bec="0" bev="0" fileid="7" />
+                <SequencePoint vc="0" uspid="21" ordinal="3" sl="21" sc="1" el="21" ec="2" bec="0" bev="0" fileid="7" />
+                <SequencePoint vc="0" uspid="22" ordinal="4" sl="22" sc="1" el="22" ec="2" bec="0" bev="0" fileid="7" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="0" offset="0" sc="0" sl="18" ec="1" el="22" bec="0" bev="0" fileid="7" xmlns:p8="xsi" />
+            </Method>
+          </Methods>
+        </Class>
+      </Classes>
+    </Module>
+    <Module hash="BAC32065-9B84-46A5-B6E1-4D426A2F30B0">
+      <ModulePath>EasyMicroservices.Serialization.dll</ModulePath>
+      <ModuleTime>2023-12-11T05:53:23</ModuleTime>
+      <ModuleName>EasyMicroservices.Serialization</ModuleName>
+      <Files>
+        <File uid="8" fullPath="/home/runner/work/Serialization/Serialization/src/CSharp/EasyMicroservices.Serialization/Providers/BaseProvider.cs" />
+        <File uid="9" fullPath="/home/runner/work/Serialization/Serialization/src/CSharp/EasyMicroservices.Serialization/Providers/BinarySerializationBaseProvider.cs" />
+        <File uid="10" fullPath="/home/runner/work/Serialization/Serialization/src/CSharp/EasyMicroservices.Serialization/Providers/TextSerializationBaseProvider.cs" />
+        <File uid="11" fullPath="/home/runner/work/Serialization/Serialization/src/CSharp/EasyMicroservices.Serialization/Options/SerializationOptionBuilder.cs" />
+      </Files>
+      <Classes>
+        <Class>
+          <Summary numSequencePoints="21" visitedSequencePoints="0" numBranchPoints="6" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="6" minCyclomaticComplexity="1" visitedClasses="0" numClasses="1" visitedMethods="0" numMethods="5" />
+          <FullName>EasyMicroservices.Serialization.Providers.BaseProvider</FullName>
+          <Methods>
+            <Method cyclomaticComplexity="1" nPathComplexity="1" sequenceCoverage="0" branchCoverage="100" isConstructor="False" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="3" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Boolean EasyMicroservices.Serialization.Providers.BaseProvider::CanConvert(System.Type)</Name>
+              <FileRef uid="8" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="18" ordinal="0" sl="18" sc="1" el="18" ec="2" bec="0" bev="0" fileid="8" />
+                <SequencePoint vc="0" uspid="19" ordinal="1" sl="19" sc="1" el="19" ec="2" bec="0" bev="0" fileid="8" />
+                <SequencePoint vc="0" uspid="20" ordinal="2" sl="20" sc="1" el="20" ec="2" bec="0" bev="0" fileid="8" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="0" offset="0" sc="0" sl="18" ec="1" el="20" bec="0" bev="0" fileid="8" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="1" sequenceCoverage="0" branchCoverage="100" isConstructor="False" isGetter="True" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="1" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Collections.Generic.Dictionary`2&lt;System.Type,System.Type&gt; EasyMicroservices.Serialization.Providers.BaseProvider::get_ReplacedWithARuntimeType()</Name>
+              <FileRef uid="8" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="22" ordinal="0" sl="22" sc="1" el="22" ec="2" bec="0" bev="0" fileid="8" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="1" offset="1" sc="0" sl="22" ec="1" el="22" bec="0" bev="0" fileid="8" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="6" nPathComplexity="6" sequenceCoverage="0" branchCoverage="0" isConstructor="False" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="11" visitedSequencePoints="0" numBranchPoints="6" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="6" minCyclomaticComplexity="6" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Type EasyMicroservices.Serialization.Providers.BaseProvider::GetReplacedType(System.Type)</Name>
+              <FileRef uid="8" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="30" ordinal="0" sl="30" sc="1" el="30" ec="2" bec="0" bev="0" fileid="8" />
+                <SequencePoint vc="0" uspid="31" ordinal="1" sl="31" sc="1" el="31" ec="2" bec="2" bev="0" fileid="8" />
+                <SequencePoint vc="0" uspid="32" ordinal="2" sl="32" sc="1" el="32" ec="2" bec="2" bev="0" fileid="8" />
+                <SequencePoint vc="0" uspid="33" ordinal="3" sl="33" sc="1" el="33" ec="2" bec="2" bev="0" fileid="8" />
+                <SequencePoint vc="0" uspid="34" ordinal="4" sl="34" sc="1" el="34" ec="2" bec="0" bev="0" fileid="8" />
+                <SequencePoint vc="0" uspid="35" ordinal="5" sl="35" sc="1" el="35" ec="2" bec="0" bev="0" fileid="8" />
+                <SequencePoint vc="0" uspid="36" ordinal="6" sl="36" sc="1" el="36" ec="2" bec="0" bev="0" fileid="8" />
+                <SequencePoint vc="0" uspid="37" ordinal="7" sl="37" sc="1" el="37" ec="2" bec="0" bev="0" fileid="8" />
+                <SequencePoint vc="0" uspid="39" ordinal="8" sl="39" sc="1" el="39" ec="2" bec="0" bev="0" fileid="8" />
+                <SequencePoint vc="0" uspid="40" ordinal="9" sl="40" sc="1" el="40" ec="2" bec="0" bev="0" fileid="8" />
+                <SequencePoint vc="0" uspid="41" ordinal="10" sl="41" sc="1" el="41" ec="2" bec="0" bev="0" fileid="8" />
+              </SequencePoints>
+              <BranchPoints>
+                <BranchPoint vc="0" uspid="31" ordinal="0" path="0" offset="16" offsetend="18" sl="31" fileid="8" />
+                <BranchPoint vc="0" uspid="32" ordinal="2" path="0" offset="20" offsetend="22" sl="32" fileid="8" />
+                <BranchPoint vc="0" uspid="32" ordinal="3" path="1" offset="20" offsetend="24" sl="32" fileid="8" />
+                <BranchPoint vc="0" uspid="31" ordinal="1" path="1" offset="16" offsetend="27" sl="31" fileid="8" />
+                <BranchPoint vc="0" uspid="33" ordinal="4" path="0" offset="36" offsetend="38" sl="33" fileid="8" />
+                <BranchPoint vc="0" uspid="33" ordinal="5" path="1" offset="36" offsetend="64" sl="33" fileid="8" />
+              </BranchPoints>
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="2" offset="2" sc="0" sl="30" ec="1" el="41" bec="0" bev="0" fileid="8" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="1" sequenceCoverage="0" branchCoverage="100" isConstructor="False" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="3" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Boolean EasyMicroservices.Serialization.Providers.BaseProvider::CanReplaceType(System.Type)</Name>
+              <FileRef uid="8" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="48" ordinal="0" sl="48" sc="1" el="48" ec="2" bec="0" bev="0" fileid="8" />
+                <SequencePoint vc="0" uspid="49" ordinal="1" sl="49" sc="1" el="49" ec="2" bec="0" bev="0" fileid="8" />
+                <SequencePoint vc="0" uspid="50" ordinal="2" sl="50" sc="1" el="50" ec="2" bec="0" bev="0" fileid="8" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="3" offset="3" sc="0" sl="48" ec="1" el="50" bec="0" bev="0" fileid="8" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="1" sequenceCoverage="0" branchCoverage="100" isConstructor="False" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="3" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Type EasyMicroservices.Serialization.Providers.BaseProvider::ReplaceType(System.Type)</Name>
+              <FileRef uid="8" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="58" ordinal="0" sl="58" sc="1" el="58" ec="2" bec="0" bev="0" fileid="8" />
+                <SequencePoint vc="0" uspid="59" ordinal="1" sl="59" sc="1" el="59" ec="2" bec="0" bev="0" fileid="8" />
+                <SequencePoint vc="0" uspid="60" ordinal="2" sl="60" sc="1" el="60" ec="2" bec="0" bev="0" fileid="8" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="4" offset="4" sc="0" sl="58" ec="1" el="60" bec="0" bev="0" fileid="8" xmlns:p8="xsi" />
+            </Method>
+          </Methods>
+        </Class>
+        <Class>
+          <Summary numSequencePoints="6" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="1" visitedMethods="0" numMethods="2" />
+          <FullName>EasyMicroservices.Serialization.Providers.BinarySerializationBaseProvider</FullName>
+          <Methods>
+            <Method cyclomaticComplexity="1" nPathComplexity="1" sequenceCoverage="0" branchCoverage="100" isConstructor="False" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="3" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken />
+              <Name>System.ReadOnlySpan`1&lt;System.Byte&gt; EasyMicroservices.Serialization.Providers.BinarySerializationBaseProvider::SerializeToBytes(T)</Name>
+              <FileRef uid="9" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="32" ordinal="0" sl="32" sc="1" el="32" ec="2" bec="0" bev="0" fileid="9" />
+                <SequencePoint vc="0" uspid="33" ordinal="1" sl="33" sc="1" el="33" ec="2" bec="0" bev="0" fileid="9" />
+                <SequencePoint vc="0" uspid="34" ordinal="2" sl="34" sc="1" el="34" ec="2" bec="0" bev="0" fileid="9" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="0" offset="0" sc="0" sl="32" ec="1" el="34" bec="0" bev="0" fileid="9" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="1" sequenceCoverage="0" branchCoverage="100" isConstructor="False" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="3" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken />
+              <Name>T EasyMicroservices.Serialization.Providers.BinarySerializationBaseProvider::DeserializeFromBytes(System.ReadOnlySpan`1&lt;System.Byte&gt;)</Name>
+              <FileRef uid="9" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="43" ordinal="0" sl="43" sc="1" el="43" ec="2" bec="0" bev="0" fileid="9" />
+                <SequencePoint vc="0" uspid="44" ordinal="1" sl="44" sc="1" el="44" ec="2" bec="0" bev="0" fileid="9" />
+                <SequencePoint vc="0" uspid="45" ordinal="2" sl="45" sc="1" el="45" ec="2" bec="0" bev="0" fileid="9" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="1" offset="1" sc="0" sl="43" ec="1" el="45" bec="0" bev="0" fileid="9" xmlns:p8="xsi" />
+            </Method>
+          </Methods>
+        </Class>
+        <Class>
+          <Summary numSequencePoints="6" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="1" visitedMethods="0" numMethods="2" />
+          <FullName>EasyMicroservices.Serialization.Providers.TextSerializationBaseProvider</FullName>
+          <Methods>
+            <Method cyclomaticComplexity="1" nPathComplexity="1" sequenceCoverage="0" branchCoverage="100" isConstructor="False" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="3" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken />
+              <Name>System.ReadOnlySpan`1&lt;System.Byte&gt; EasyMicroservices.Serialization.Providers.TextSerializationBaseProvider::SerializeToBytes(T)</Name>
+              <FileRef uid="10" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="38" ordinal="0" sl="38" sc="1" el="38" ec="2" bec="0" bev="0" fileid="10" />
+                <SequencePoint vc="0" uspid="39" ordinal="1" sl="39" sc="1" el="39" ec="2" bec="0" bev="0" fileid="10" />
+                <SequencePoint vc="0" uspid="40" ordinal="2" sl="40" sc="1" el="40" ec="2" bec="0" bev="0" fileid="10" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="0" offset="0" sc="0" sl="38" ec="1" el="40" bec="0" bev="0" fileid="10" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="1" sequenceCoverage="0" branchCoverage="100" isConstructor="False" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="3" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken />
+              <Name>T EasyMicroservices.Serialization.Providers.TextSerializationBaseProvider::DeserializeFromBytes(System.ReadOnlySpan`1&lt;System.Byte&gt;)</Name>
+              <FileRef uid="10" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="49" ordinal="0" sl="49" sc="1" el="49" ec="2" bec="0" bev="0" fileid="10" />
+                <SequencePoint vc="0" uspid="50" ordinal="1" sl="50" sc="1" el="50" ec="2" bec="0" bev="0" fileid="10" />
+                <SequencePoint vc="0" uspid="51" ordinal="2" sl="51" sc="1" el="51" ec="2" bec="0" bev="0" fileid="10" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="1" offset="1" sc="0" sl="49" ec="1" el="51" bec="0" bev="0" fileid="10" xmlns:p8="xsi" />
+            </Method>
+          </Methods>
+        </Class>
+        <Class>
+          <Summary numSequencePoints="20" visitedSequencePoints="0" numBranchPoints="8" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="2" minCyclomaticComplexity="2" visitedClasses="0" numClasses="1" visitedMethods="0" numMethods="4" />
+          <FullName>EasyMicroservices.Serialization.Options.SerializationOptionBuilder</FullName>
+          <Methods>
+            <Method cyclomaticComplexity="2" nPathComplexity="2" sequenceCoverage="0" branchCoverage="0" isConstructor="False" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="5" visitedSequencePoints="0" numBranchPoints="2" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="2" minCyclomaticComplexity="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Void EasyMicroservices.Serialization.Options.SerializationOptionBuilder::UseTextSerialization(System.Func`1&lt;EasyMicroservices.Serialization.Interfaces.ITextSerializationProvider&gt;)</Name>
+              <FileRef uid="11" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="19" ordinal="0" sl="19" sc="1" el="19" ec="2" bec="0" bev="0" fileid="11" />
+                <SequencePoint vc="0" uspid="20" ordinal="1" sl="20" sc="1" el="20" ec="2" bec="2" bev="0" fileid="11" />
+                <SequencePoint vc="0" uspid="21" ordinal="2" sl="21" sc="1" el="21" ec="2" bec="0" bev="0" fileid="11" />
+                <SequencePoint vc="0" uspid="22" ordinal="3" sl="22" sc="1" el="22" ec="2" bec="0" bev="0" fileid="11" />
+                <SequencePoint vc="0" uspid="23" ordinal="4" sl="23" sc="1" el="23" ec="2" bec="0" bev="0" fileid="11" />
+              </SequencePoints>
+              <BranchPoints>
+                <BranchPoint vc="0" uspid="20" ordinal="0" path="0" offset="11" offsetend="13" sl="20" fileid="11" />
+                <BranchPoint vc="0" uspid="20" ordinal="1" path="1" offset="11" offsetend="24" sl="20" fileid="11" />
+              </BranchPoints>
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="0" offset="0" sc="0" sl="19" ec="1" el="23" bec="0" bev="0" fileid="11" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="2" nPathComplexity="2" sequenceCoverage="0" branchCoverage="0" isConstructor="False" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="5" visitedSequencePoints="0" numBranchPoints="2" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="2" minCyclomaticComplexity="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Void EasyMicroservices.Serialization.Options.SerializationOptionBuilder::UseBinarySerialization(System.Func`1&lt;EasyMicroservices.Serialization.Interfaces.IBinarySerializationProvider&gt;)</Name>
+              <FileRef uid="11" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="30" ordinal="0" sl="30" sc="1" el="30" ec="2" bec="0" bev="0" fileid="11" />
+                <SequencePoint vc="0" uspid="31" ordinal="1" sl="31" sc="1" el="31" ec="2" bec="2" bev="0" fileid="11" />
+                <SequencePoint vc="0" uspid="32" ordinal="2" sl="32" sc="1" el="32" ec="2" bec="0" bev="0" fileid="11" />
+                <SequencePoint vc="0" uspid="33" ordinal="3" sl="33" sc="1" el="33" ec="2" bec="0" bev="0" fileid="11" />
+                <SequencePoint vc="0" uspid="34" ordinal="4" sl="34" sc="1" el="34" ec="2" bec="0" bev="0" fileid="11" />
+              </SequencePoints>
+              <BranchPoints>
+                <BranchPoint vc="0" uspid="31" ordinal="0" path="0" offset="11" offsetend="13" sl="31" fileid="11" />
+                <BranchPoint vc="0" uspid="31" ordinal="1" path="1" offset="11" offsetend="24" sl="31" fileid="11" />
+              </BranchPoints>
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="1" offset="1" sc="0" sl="30" ec="1" el="34" bec="0" bev="0" fileid="11" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="2" nPathComplexity="2" sequenceCoverage="0" branchCoverage="0" isConstructor="False" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="5" visitedSequencePoints="0" numBranchPoints="2" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="2" minCyclomaticComplexity="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken />
+              <Name>EasyMicroservices.Serialization.Interfaces.ITextSerializationProvider EasyMicroservices.Serialization.Options.SerializationOptionBuilder::GetTextSerialization()</Name>
+              <FileRef uid="11" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="43" ordinal="0" sl="43" sc="1" el="43" ec="2" bec="0" bev="0" fileid="11" />
+                <SequencePoint vc="0" uspid="44" ordinal="1" sl="44" sc="1" el="44" ec="2" bec="2" bev="0" fileid="11" />
+                <SequencePoint vc="0" uspid="45" ordinal="2" sl="45" sc="1" el="45" ec="2" bec="0" bev="0" fileid="11" />
+                <SequencePoint vc="0" uspid="46" ordinal="3" sl="46" sc="1" el="46" ec="2" bec="0" bev="0" fileid="11" />
+                <SequencePoint vc="0" uspid="47" ordinal="4" sl="47" sc="1" el="47" ec="2" bec="0" bev="0" fileid="11" />
+              </SequencePoints>
+              <BranchPoints>
+                <BranchPoint vc="0" uspid="44" ordinal="0" path="0" offset="11" offsetend="13" sl="44" fileid="11" />
+                <BranchPoint vc="0" uspid="44" ordinal="1" path="1" offset="11" offsetend="24" sl="44" fileid="11" />
+              </BranchPoints>
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="2" offset="2" sc="0" sl="43" ec="1" el="47" bec="0" bev="0" fileid="11" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="2" nPathComplexity="2" sequenceCoverage="0" branchCoverage="0" isConstructor="False" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="5" visitedSequencePoints="0" numBranchPoints="2" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="2" minCyclomaticComplexity="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken />
+              <Name>EasyMicroservices.Serialization.Interfaces.IBinarySerializationProvider EasyMicroservices.Serialization.Options.SerializationOptionBuilder::GetBinarySerialization()</Name>
+              <FileRef uid="11" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="55" ordinal="0" sl="55" sc="1" el="55" ec="2" bec="0" bev="0" fileid="11" />
+                <SequencePoint vc="0" uspid="56" ordinal="1" sl="56" sc="1" el="56" ec="2" bec="2" bev="0" fileid="11" />
+                <SequencePoint vc="0" uspid="57" ordinal="2" sl="57" sc="1" el="57" ec="2" bec="0" bev="0" fileid="11" />
+                <SequencePoint vc="0" uspid="58" ordinal="3" sl="58" sc="1" el="58" ec="2" bec="0" bev="0" fileid="11" />
+                <SequencePoint vc="0" uspid="59" ordinal="4" sl="59" sc="1" el="59" ec="2" bec="0" bev="0" fileid="11" />
+              </SequencePoints>
+              <BranchPoints>
+                <BranchPoint vc="0" uspid="56" ordinal="0" path="0" offset="11" offsetend="13" sl="56" fileid="11" />
+                <BranchPoint vc="0" uspid="56" ordinal="1" path="1" offset="11" offsetend="24" sl="56" fileid="11" />
+              </BranchPoints>
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="3" offset="3" sc="0" sl="55" ec="1" el="59" bec="0" bev="0" fileid="11" xmlns:p8="xsi" />
+            </Method>
+          </Methods>
+        </Class>
+      </Classes>
+    </Module>
+    <Module hash="E7918FA0-A94E-4B14-AC42-16B7A93B35EC">
+      <ModulePath>EasyMicroservices.Serialization.YamlDotNet.dll</ModulePath>
+      <ModuleTime>2023-12-11T05:53:23</ModuleTime>
+      <ModuleName>EasyMicroservices.Serialization.YamlDotNet</ModuleName>
+      <Files>
+        <File uid="12" fullPath="/home/runner/work/Serialization/Serialization/src/CSharp/EasyMicroservices.Serialization.YamlDotNet/YamlDotNetExtensions.cs" />
+        <File uid="13" fullPath="/home/runner/work/Serialization/Serialization/src/CSharp/EasyMicroservices.Serialization.YamlDotNet/Providers/DotNetYamlProvider.cs" />
+      </Files>
+      <Classes>
+        <Class>
+          <Summary numSequencePoints="5" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="1" visitedMethods="0" numMethods="1" />
+          <FullName>Microsoft.Extensions.DependencyInjection.YamlDotNetExtensions</FullName>
+          <Methods>
+            <Method cyclomaticComplexity="1" nPathComplexity="1" sequenceCoverage="0" branchCoverage="100" isConstructor="False" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="5" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken />
+              <Name>EasyMicroservices.Serialization.Options.SerializationOption Microsoft.Extensions.DependencyInjection.YamlDotNetExtensions::UseYamlDotNet(EasyMicroservices.Serialization.Options.SerializationOption)</Name>
+              <FileRef uid="12" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="18" ordinal="0" sl="18" sc="1" el="18" ec="2" bec="0" bev="0" fileid="12" />
+                <SequencePoint vc="0" uspid="19" ordinal="1" sl="19" sc="1" el="19" ec="2" bec="0" bev="0" fileid="12" />
+                <SequencePoint vc="0" uspid="20" ordinal="2" sl="20" sc="1" el="20" ec="2" bec="0" bev="0" fileid="12" />
+                <SequencePoint vc="0" uspid="21" ordinal="3" sl="21" sc="1" el="21" ec="2" bec="0" bev="0" fileid="12" />
+                <SequencePoint vc="0" uspid="22" ordinal="4" sl="22" sc="1" el="22" ec="2" bec="0" bev="0" fileid="12" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="0" offset="0" sc="0" sl="18" ec="1" el="22" bec="0" bev="0" fileid="12" xmlns:p8="xsi" />
+            </Method>
+          </Methods>
+        </Class>
+        <Class>
+          <Summary numSequencePoints="12" visitedSequencePoints="12" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="1" numClasses="1" visitedMethods="2" numMethods="2" />
+          <FullName>EasyMicroservices.Serialization.YamlDotNet.Providers.YamlDotNetProvider</FullName>
+          <Methods>
+            <Method cyclomaticComplexity="1" nPathComplexity="1" sequenceCoverage="100" branchCoverage="100" isConstructor="False" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="6" visitedSequencePoints="6" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken />
+              <Name>T EasyMicroservices.Serialization.YamlDotNet.Providers.YamlDotNetProvider::Deserialize(System.String)</Name>
+              <FileRef uid="13" />
+              <SequencePoints>
+                <SequencePoint vc="6" uspid="21" ordinal="0" sl="21" sc="1" el="21" ec="2" bec="0" bev="0" fileid="13" />
+                <SequencePoint vc="6" uspid="22" ordinal="1" sl="22" sc="1" el="22" ec="2" bec="0" bev="0" fileid="13" />
+                <SequencePoint vc="6" uspid="23" ordinal="2" sl="23" sc="1" el="23" ec="2" bec="0" bev="0" fileid="13" />
+                <SequencePoint vc="6" uspid="24" ordinal="3" sl="24" sc="1" el="24" ec="2" bec="0" bev="0" fileid="13" />
+                <SequencePoint vc="6" uspid="26" ordinal="4" sl="26" sc="1" el="26" ec="2" bec="0" bev="0" fileid="13" />
+                <SequencePoint vc="6" uspid="27" ordinal="5" sl="27" sc="1" el="27" ec="2" bec="0" bev="0" fileid="13" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="6" uspid="0" p8:type="SequencePoint" ordinal="0" offset="0" sc="0" sl="21" ec="1" el="27" bec="0" bev="0" fileid="13" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="1" sequenceCoverage="100" branchCoverage="100" isConstructor="False" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="6" visitedSequencePoints="6" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken />
+              <Name>System.String EasyMicroservices.Serialization.YamlDotNet.Providers.YamlDotNetProvider::Serialize(T)</Name>
+              <FileRef uid="13" />
+              <SequencePoints>
+                <SequencePoint vc="3" uspid="35" ordinal="0" sl="35" sc="1" el="35" ec="2" bec="0" bev="0" fileid="13" />
+                <SequencePoint vc="3" uspid="36" ordinal="1" sl="36" sc="1" el="36" ec="2" bec="0" bev="0" fileid="13" />
+                <SequencePoint vc="3" uspid="37" ordinal="2" sl="37" sc="1" el="37" ec="2" bec="0" bev="0" fileid="13" />
+                <SequencePoint vc="3" uspid="38" ordinal="3" sl="38" sc="1" el="38" ec="2" bec="0" bev="0" fileid="13" />
+                <SequencePoint vc="3" uspid="40" ordinal="4" sl="40" sc="1" el="40" ec="2" bec="0" bev="0" fileid="13" />
+                <SequencePoint vc="3" uspid="41" ordinal="5" sl="41" sc="1" el="41" ec="2" bec="0" bev="0" fileid="13" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="6" uspid="0" p8:type="SequencePoint" ordinal="1" offset="1" sc="0" sl="35" ec="1" el="41" bec="0" bev="0" fileid="13" xmlns:p8="xsi" />
+            </Method>
+          </Methods>
+        </Class>
+      </Classes>
+    </Module>
+    <Module hash="42F3507A-3738-49AE-8B04-476B167F9465">
+      <ModulePath>EasyMicroservices.Serialization.MessagePack.dll</ModulePath>
+      <ModuleTime>2023-12-11T05:53:23</ModuleTime>
+      <ModuleName>EasyMicroservices.Serialization.MessagePack</ModuleName>
+      <Files>
+        <File uid="14" fullPath="/home/runner/work/Serialization/Serialization/src/CSharp/EasyMicroservices.Serialization.MessagePack/Providers/MessagePackProvider.cs" />
+        <File uid="15" fullPath="/home/runner/work/Serialization/Serialization/src/CSharp/EasyMicroservices.Serialization.MessagePack/MessagePackExtensions.cs" />
+      </Files>
+      <Classes>
+        <Class>
+          <Summary numSequencePoints="6" visitedSequencePoints="6" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="1" numClasses="1" visitedMethods="2" numMethods="2" />
+          <FullName>EasyMicroservices.Serialization.MessagePack.Providers.MessagePackProvider</FullName>
+          <Methods>
+            <Method cyclomaticComplexity="1" nPathComplexity="1" sequenceCoverage="100" branchCoverage="100" isConstructor="False" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="3" visitedSequencePoints="3" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken />
+              <Name>T EasyMicroservices.Serialization.MessagePack.Providers.MessagePackProvider::Deserialize(System.ReadOnlySpan`1&lt;System.Byte&gt;)</Name>
+              <FileRef uid="14" />
+              <SequencePoints>
+                <SequencePoint vc="6" uspid="23" ordinal="0" sl="23" sc="1" el="23" ec="2" bec="0" bev="0" fileid="14" />
+                <SequencePoint vc="6" uspid="24" ordinal="1" sl="24" sc="1" el="24" ec="2" bec="0" bev="0" fileid="14" />
+                <SequencePoint vc="6" uspid="25" ordinal="2" sl="25" sc="1" el="25" ec="2" bec="0" bev="0" fileid="14" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="3" uspid="0" p8:type="SequencePoint" ordinal="0" offset="0" sc="0" sl="23" ec="1" el="25" bec="0" bev="0" fileid="14" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="1" sequenceCoverage="100" branchCoverage="100" isConstructor="False" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="3" visitedSequencePoints="3" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken />
+              <Name>System.ReadOnlySpan`1&lt;System.Byte&gt; EasyMicroservices.Serialization.MessagePack.Providers.MessagePackProvider::Serialize(T)</Name>
+              <FileRef uid="14" />
+              <SequencePoints>
+                <SequencePoint vc="8" uspid="35" ordinal="0" sl="35" sc="1" el="35" ec="2" bec="0" bev="0" fileid="14" />
+                <SequencePoint vc="8" uspid="36" ordinal="1" sl="36" sc="1" el="36" ec="2" bec="0" bev="0" fileid="14" />
+                <SequencePoint vc="8" uspid="37" ordinal="2" sl="37" sc="1" el="37" ec="2" bec="0" bev="0" fileid="14" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="3" uspid="0" p8:type="SequencePoint" ordinal="1" offset="1" sc="0" sl="35" ec="1" el="37" bec="0" bev="0" fileid="14" xmlns:p8="xsi" />
+            </Method>
+          </Methods>
+        </Class>
+        <Class>
+          <Summary numSequencePoints="5" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="1" visitedMethods="0" numMethods="1" />
+          <FullName>Microsoft.Extensions.DependencyInjection.MessagePackExtensions</FullName>
+          <Methods>
+            <Method cyclomaticComplexity="1" nPathComplexity="1" sequenceCoverage="0" branchCoverage="100" isConstructor="False" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="5" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken />
+              <Name>EasyMicroservices.Serialization.Options.SerializationOption Microsoft.Extensions.DependencyInjection.MessagePackExtensions::UseMessagePack(EasyMicroservices.Serialization.Options.SerializationOption)</Name>
+              <FileRef uid="15" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="18" ordinal="0" sl="18" sc="1" el="18" ec="2" bec="0" bev="0" fileid="15" />
+                <SequencePoint vc="0" uspid="19" ordinal="1" sl="19" sc="1" el="19" ec="2" bec="0" bev="0" fileid="15" />
+                <SequencePoint vc="0" uspid="20" ordinal="2" sl="20" sc="1" el="20" ec="2" bec="0" bev="0" fileid="15" />
+                <SequencePoint vc="0" uspid="21" ordinal="3" sl="21" sc="1" el="21" ec="2" bec="0" bev="0" fileid="15" />
+                <SequencePoint vc="0" uspid="22" ordinal="4" sl="22" sc="1" el="22" ec="2" bec="0" bev="0" fileid="15" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="0" offset="0" sc="0" sl="18" ec="1" el="22" bec="0" bev="0" fileid="15" xmlns:p8="xsi" />
+            </Method>
+          </Methods>
+        </Class>
+      </Classes>
+    </Module>
+    <Module hash="2696A49E-BB67-40BB-94B9-9615D4EBDFD2">
+      <ModulePath>EasyMicroservices.Serialization.System.Text.Xml.dll</ModulePath>
+      <ModuleTime>2023-12-11T05:53:23</ModuleTime>
+      <ModuleName>EasyMicroservices.Serialization.System.Text.Xml</ModuleName>
+      <Files>
+        <File uid="16" fullPath="/home/runner/work/Serialization/Serialization/src/CSharp/EasyMicroservices.Serialization.System.Text.Xml/SystemTextXmlExtensions.cs" />
+        <File uid="17" fullPath="/home/runner/work/Serialization/Serialization/src/CSharp/EasyMicroservices.Serialization.System.Text.Xml/Providers/SystemTextXmlProvider.cs" />
+      </Files>
+      <Classes>
+        <Class>
+          <Summary numSequencePoints="5" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="1" visitedMethods="0" numMethods="1" />
+          <FullName>Microsoft.Extensions.DependencyInjection.SystemTextXmlExtensions</FullName>
+          <Methods>
+            <Method cyclomaticComplexity="1" nPathComplexity="1" sequenceCoverage="0" branchCoverage="100" isConstructor="False" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="5" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken />
+              <Name>EasyMicroservices.Serialization.Options.SerializationOption Microsoft.Extensions.DependencyInjection.SystemTextXmlExtensions::UseSystemTextXml(EasyMicroservices.Serialization.Options.SerializationOption)</Name>
+              <FileRef uid="16" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="18" ordinal="0" sl="18" sc="1" el="18" ec="2" bec="0" bev="0" fileid="16" />
+                <SequencePoint vc="0" uspid="19" ordinal="1" sl="19" sc="1" el="19" ec="2" bec="0" bev="0" fileid="16" />
+                <SequencePoint vc="0" uspid="20" ordinal="2" sl="20" sc="1" el="20" ec="2" bec="0" bev="0" fileid="16" />
+                <SequencePoint vc="0" uspid="21" ordinal="3" sl="21" sc="1" el="21" ec="2" bec="0" bev="0" fileid="16" />
+                <SequencePoint vc="0" uspid="22" ordinal="4" sl="22" sc="1" el="22" ec="2" bec="0" bev="0" fileid="16" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="0" offset="0" sc="0" sl="18" ec="1" el="22" bec="0" bev="0" fileid="16" xmlns:p8="xsi" />
+            </Method>
+          </Methods>
+        </Class>
+        <Class>
+          <Summary numSequencePoints="13" visitedSequencePoints="13" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="1" numClasses="1" visitedMethods="2" numMethods="2" />
+          <FullName>EasyMicroservices.Serialization.System.Text.Xml.Providers.SystemTextXmlProvider</FullName>
+          <Methods>
+            <Method cyclomaticComplexity="1" nPathComplexity="1" sequenceCoverage="100" branchCoverage="100" isConstructor="False" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="4" visitedSequencePoints="4" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken />
+              <Name>T EasyMicroservices.Serialization.System.Text.Xml.Providers.SystemTextXmlProvider::Deserialize(System.String)</Name>
+              <FileRef uid="17" />
+              <SequencePoints>
+                <SequencePoint vc="3" uspid="19" ordinal="0" sl="19" sc="1" el="19" ec="2" bec="0" bev="0" fileid="17" />
+                <SequencePoint vc="3" uspid="20" ordinal="1" sl="20" sc="1" el="20" ec="2" bec="0" bev="0" fileid="17" />
+                <SequencePoint vc="3" uspid="21" ordinal="2" sl="21" sc="1" el="21" ec="2" bec="0" bev="0" fileid="17" />
+                <SequencePoint vc="3" uspid="22" ordinal="3" sl="22" sc="1" el="22" ec="2" bec="0" bev="0" fileid="17" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="4" uspid="0" p8:type="SequencePoint" ordinal="0" offset="0" sc="0" sl="19" ec="1" el="22" bec="0" bev="0" fileid="17" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="1" sequenceCoverage="100" branchCoverage="100" isConstructor="False" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="9" visitedSequencePoints="9" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken />
+              <Name>System.String EasyMicroservices.Serialization.System.Text.Xml.Providers.SystemTextXmlProvider::Serialize(T)</Name>
+              <FileRef uid="17" />
+              <SequencePoints>
+                <SequencePoint vc="3" uspid="29" ordinal="0" sl="29" sc="1" el="29" ec="2" bec="0" bev="0" fileid="17" />
+                <SequencePoint vc="3" uspid="30" ordinal="1" sl="30" sc="1" el="30" ec="2" bec="0" bev="0" fileid="17" />
+                <SequencePoint vc="3" uspid="31" ordinal="2" sl="31" sc="1" el="31" ec="2" bec="0" bev="0" fileid="17" />
+                <SequencePoint vc="3" uspid="32" ordinal="3" sl="32" sc="1" el="32" ec="2" bec="0" bev="0" fileid="17" />
+                <SequencePoint vc="3" uspid="33" ordinal="4" sl="33" sc="1" el="33" ec="2" bec="0" bev="0" fileid="17" />
+                <SequencePoint vc="3" uspid="34" ordinal="5" sl="34" sc="1" el="34" ec="2" bec="0" bev="0" fileid="17" />
+                <SequencePoint vc="3" uspid="35" ordinal="6" sl="35" sc="1" el="35" ec="2" bec="0" bev="0" fileid="17" />
+                <SequencePoint vc="3" uspid="36" ordinal="7" sl="36" sc="1" el="36" ec="2" bec="0" bev="0" fileid="17" />
+                <SequencePoint vc="3" uspid="39" ordinal="8" sl="39" sc="1" el="39" ec="2" bec="0" bev="0" fileid="17" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="9" uspid="0" p8:type="SequencePoint" ordinal="1" offset="1" sc="0" sl="29" ec="1" el="39" bec="0" bev="0" fileid="17" xmlns:p8="xsi" />
+            </Method>
+          </Methods>
+        </Class>
+      </Classes>
+    </Module>
+  </Modules>
+</CoverageSession>

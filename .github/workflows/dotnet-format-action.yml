@@ -24,13 +24,13 @@ jobs:
         with:
           repo-token: ${{ secrets.GITHUB_TOKEN }}
           action: "fix"
-          workspace: "./src/CSharp/EasyMicroservices.Serialization.sln"
+          workspace: "./src/CSharp/EasyMicroservices.Serialization-net6.0.sln"
       - name: Test
-        run: dotnet test ./src/CSharp/EasyMicroservices.Serialization.sln
+        run: dotnet test ./src/CSharp/EasyMicroservices.Serialization-net6.0.sln
       - name:  Test to generate Code Coverage Report
         working-directory: ./src/CSharp
         run: |
-          dotnet build ./EasyMicroservices.Serialization.sln
+          dotnet build ./EasyMicroservices.Serialization-net6.0.sln
           dotnet tool install --global coverlet.console
           coverlet EasyMicroservices.Serialization.Tests/bin/Debug/net6.0/EasyMicroservices.Serialization.Tests.dll --target "dotnet" --targetargs "test EasyMicroservices.Serialization.Tests/bin/Debug/net6.0/EasyMicroservices.Serialization.Tests.dll --no-build" -f opencover
       - name: OpenCover Badge Generator
