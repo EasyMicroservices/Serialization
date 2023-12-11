@@ -1,4 +1,8 @@
-﻿using System;
+﻿// Licensed to the .NET Foundation under one or more agreements.
+// The .NET Foundation licenses this file to you under the MIT license.
+
+using System;
+using System.Text;
 using EasyMicroservices.Serialization.Interfaces;
 
 namespace EasyMicroservices.Serialization.Providers
@@ -24,5 +28,26 @@ namespace EasyMicroservices.Serialization.Providers
         /// <returns></returns>
         /// <exception cref="NotImplementedException"></exception>
         public abstract string Serialize<T>(T value);
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="value"></param>
+        /// <returns></returns>
+        public override ReadOnlySpan<byte> SerializeToBytes<T>(T value)
+        {
+            return Encoding.UTF8.GetBytes(Serialize(value));
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="bytes"></param>
+        /// <returns></returns>
+        public override T DeserializeFromBytes<T>(ReadOnlySpan<byte> bytes)
+        {
+            return Deserialize<T>(Encoding.UTF8.GetString(bytes.ToArray()));
+        }
     }
 }

@@ -58,5 +58,21 @@ namespace EasyMicroservices.Serialization.Providers
         {
             return type;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="value"></param>
+        /// <returns></returns>
+        public abstract ReadOnlySpan<byte> SerializeToBytes<T>(T value);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="bytes"></param>
+        /// <returns></returns>
+        public abstract T DeserializeFromBytes<T>(ReadOnlySpan<byte> bytes);
     }
 }
